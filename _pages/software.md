@@ -72,4 +72,4 @@ Made for uploading the data to any FTP server, provided that correct crediential
 **Intallation**
 Read the instruction on follwing links for usage, installation and download.
 
-[![](https://github.com/Mr-TalhaIlyas/Mr-TalhaIlyas.github.io/raw/master/images/git.png "Github")](https://github.com/Mr-TalhaIlyas/PlantsDataUploader) [![](https://github.com/Mr-TalhaIlyas/Mr-TalhaIlyas.github.io/raw/master/images/pngegg%20(3).png "G Drive")](https://drive.google.com/drive/u/2/folders/1PYbKXt1IecuZO_rHEOOolLGP_W7Y8WSM)
+[![](https://github.com/Mr-TalhaIlyas/Mr-TalhaIlyas.github.io/raw/master/images/git.png "Github")](https://github.com/Mr-TalhaIlyas/PlantsDataUploader) [![](https://github.com/Mr-TalhaIlyas/Mr-TalhaIlyas.github.io/blob/master/images/g%20drive.png "G Drive")](https://drive.google.com/drive/u/2/folders/1PYbKXt1IecuZO_rHEOOolLGP_W7Y8WSM)
