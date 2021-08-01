@@ -70,7 +70,7 @@ pip install gray2color
 Made for uploading the data to any FTP server, provided that correct credientials are known. Also analyze the statistics of data, e.g. how many images are available, and which person has collected more images.
 
 <img src="https://github.com/Mr-TalhaIlyas/PlantsDataUploader/blob/master/screens/ezgif.com-gif-maker%20(1).gif" width="350" height="250">
-[![Alt text](https://github.com/Mr-TalhaIlyas/PlantsDataUploader/blob/master/screens/ezgif.com-gif-maker%20(1).gif)](https://www.youtube.com/watch?v=FLjeoDETX1U)
+[![Alt text](https://github.com/Mr-TalhaIlyas/PlantsDataUploader/blob/master/screens/ezgif.com-gif-maker%20(1).gif)](https://www.youtube.com/watch?v=FLjeoDETX1U)]
 
 **Intallation**
 Read the instruction on follwing links for usage, installation and download.
