@@ -13,6 +13,7 @@ This repo implements CRF as described in Deeplab paper it takes about 0.2 second
 ![](https://github.com/Mr-TalhaIlyas/Conditional-Random-Fields-CRF/raw/master/screens/img1.png)
 
 **Intallation**
+
 ```python
 pip install seg-crf
 ```
