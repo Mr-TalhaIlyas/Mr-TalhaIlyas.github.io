@@ -1,5 +1,5 @@
 # My Instructions
-* 1. Register a GitHub account if you don't have one and confirm your e-mail (required!)
+* Register a GitHub account if you don't have one and confirm your e-mail (required!)
 * Fork [this repository](https://github.com/academicpages/academicpages.github.io) by clicking the "fork" button in the top right. 
 * Go to the repository's settings (rightmost item in the tabs that start with "Code", should be below "Unwatch"). Rename the repository "[your GitHub username].github.io", which will also be your website's URL.
 ----------------------------------------------------------------------------------------
