@@ -13,31 +13,41 @@ Download a copy of my [CV here](https://drive.google.com/file/d/1rKqNxxojdiHVJ_t
 
 ## Education
 -----------------------
-**Master of Science, Electrical and Computer Engineering**, *UCLA* <br>
-Expected 2021 
+**MASTER OF SCIENCE IN ELECTRONICS AND INFORMATION ENGINEERING**, *JBNU, South-Korea* <br>
+August 2021 
 * GPA: 4.00/4.00
-* Advisor: Prof. Achuta Kadambi
+* Advisor: [Prof. Hyongsuk Kim](https://scholar.google.com/citations?user=ywYodqAAAAAJ&hl=en)
 
-**Bachelor of Science, Physics**, *UCLA* <br>
-June 2019
-* GPA: 3.78/4.00, *Cum Laude*
+**BACHELOR OF SCIENCE IN ELECTRICAL ENGINEERING **, *UET, Lahore, Pakistan* <br>
+November 2017
+* GPA: 3.36/4.00
 
 ## Research experience
 -----------------------
-**Graduate Student Researcher**, *Department of Electrical & Computer Engineering, UCLA* <br>
-April 2020 - Present
-* Advisor: Prof. Achuta Kadambi 
-* Constructed and compiled the world's first telemedicine-focused remote vital signs dataset, named VITAL, containing a large and diverse subject population in collaboration with UCLA Health
-* Developed camera-based vital sign monitoring technology with focus on mitigating skin-tone performance bias, resulting in 22% enhancement of heart rate estimates for dark skin-tone subjects in the VITAL dataset
-* Led weekly group meetings, journal club and coffee social hours, which included mentoring fellow research students, and creating a positive and productive social work environment 
+**Graduate Research Assistant**, *Robot Vision Lab, JBNU, South-Korea* <br>
+*01/09/2019 – PRESENT* 
 
-**Undergraduate/Graduate Student Researcher**, *Department of Physics & Astronomy, UCLA* <br>
-May 2017 - March 2020
-* Advisor: Prof. Pietro Musumeci
-* Investigated laser shaping tools, such as spatial light modulators, for ultrafast electron photoinjector beamlines
-* Conceptualized and conducted the world's first electron ghost imaging experiment, which utilized a computational imaging and compressive sensing framework 
-* Gained technical expertise with operating with ultrafast lasers, building table-top optics, and simulating experimental designs with MATLAB, Mathematica, and Zemax
-  
+Advisor: [Prof. Hyongsuk Kim](https://scholar.google.com/citations?user=ywYodqAAAAAJ&hl=en) and [Yongchae Jeong](https://scholar.google.com/citations?user=VhkRkVUAAAAJ&hl=ko)
+
+I am leading ongoing funded project on precision agriculture while forecasting future endeavors. Currently, working on different projects related to smart farming like deploying, and developing state-of-the-art deep learning algorithms to solve the problems like crop-weed classification, insects/pests’ infestation and disease detection, crop instance localization, and segmentation for precision agriculture. The aim of such fusion between deep learning and precision agriculture is to support high productivity and profitable horticulture systems along with safe and nutritious food and create a risk free and efficient recoverable environment for the communities. 
+We are also, working on depth estimation, optical flow for developing autonomous harvesters to increase farm yield and productivity. I have also done some projects on implementation of ML algorithms on edge devices, autonomous driving systems, 3D object detection, GANs and Stereo Vision.
+
+**RESEARCH TRAINEE**, *AIR UNIVERSITY, DEPT. OF AVIONICS AND AERONAUTICS, Pakistan* <br>
+*01/10/2018 – 01/09/2019*
+
+I worked in Communication Security and Embedded System Lab as a researcher in project namely, End-to-End Secure Voice Communication Over Voice Channel.
+
+## Field experience
+-----------------------
+**ELECTRICAL ENGINEER** – [MAN ENERGY SOLUTIONS](https://man-es.com/global/pakistan) (FORMER: MAN DIESEL AND TURBO).
+15/01/2018 – 01/10/2018 – Lahore, Pakistan 
+
+* Major maintenance of engine, VFD installation and repairing, and motor over-hauling.
+
+**ELECTRICAL SYSTEMS ENGINEER** – [WASA ELECTRIC CELL & ENERGY MANAGEMENT DEPT](http://wasafaisalabad.gop.pk/)
+15/09/2017 – 14/11/2017 
+* Installation of PFI (Power Factor Improvement) Plants and auditing, recording, paying, monitoring, and keeping the statistical record of all Electricity Usage of WASA.
+
 ## Publications
 -----------------------
   <ul>{% for post in site.publications reversed %}
@@ -50,33 +60,22 @@ May 2017 - March 2020
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
 
-## Skills
+## Digital Skills
 -----------------------
-* Programming: MATLAB, Python (NumPy, SciPy, Matplotlib, Pandas, OpenCV, Tensorflow, Keras, PyTorch), C++, LaTeX
-* Software: Mathematica, LabVIEW, Zemax, Inkscape, Microsoft Office: Word, PowerPoint, Excel
-* Electronics: Arduino, Raspberry Pi, Analog & Digital Electronics, Oscilloscopes, Soldering
-* Optics: Ultra-fast lasers, Spatial Light Modulators (Texas Instruments DLP DMD, Thorlabs Exulus SLM), Cameras, Table-top prototyping 
+|Machine Learning Frameworks (Backend)|Programming Languages|
+|---|---|
+|•	Tensorflow|•	Python|
+|•	Keras|•	MATLAB|
+|•	PyTorch|•	C/C++|
+|•	Scikit-Learn|•	HTML/CSS|
+|• Matplotlib|•	JAVA Script	|
 
-## Teaching
------------------------
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
+|Frontend/GUI/API Development|Simulation Software / Microcontrollers|
+|---|---|
+|•	Flask|•	Simulink (Matlab)|
+|•	PYQT|•	Proteus|
+|•	Tkinter|•	ARM Cortex M4-F|
+|•	Kivy|•	My-Rio FPGA|
+|•|•	Arduino (UNO, MEGA, Nano)|
 
-## Service and leadership
------------------------
-**[Upsilon Lab](https://upsilonlab.org/)**, *President & Project Manager* <br>
-April 2018 - June 2019
-* Taught undergraduate students digital electronics and microcontrollers through different projects 
-* Led organization by ensuring the steady progress of projects and access to department resources 
 
-**[Society of Physics Students](https://sps.physics.ucla.edu/)**, *Vice President* <br>
-September 2017 - June 2018 
-* Coordinated weekly meetings for undergraduates, including professor talks, student panels, social activities, and study halls 
-
-**[FIFA Club at UCLA](https://www.facebook.com/groups/FIFAUCLA)**, *Founder and President* <br>
-January 2017 - June 2019 
-* Founded the social gaming club "FIFA Club at UCLA", designed to bring students together to play the popular soccer video game series FIFA 
-* Manage team of 4 officers to organize club budget, advertising, equipment transportation and general logistics
-* Host weekly meetings that allow students to connect socially and play FIFA, averaging about 15-20 students each week  
-* Organized quarterly tournaments that entertain approximately 20-25 participants, with our largest tournament entertaining 47 participants
