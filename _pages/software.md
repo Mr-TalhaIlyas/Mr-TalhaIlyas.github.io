@@ -63,3 +63,13 @@ pip install gray2color
 ```
 [![](https://github.com/Mr-TalhaIlyas/Mr-TalhaIlyas.github.io/raw/master/images/git.png "Github")](https://github.com/Mr-TalhaIlyas/Tensorflow-Keras-Model-Profiler) [![](https://github.com/Mr-TalhaIlyas/Mr-TalhaIlyas.github.io/raw/master/images/pngegg%20(3).png "PyPi")](https://pypi.org/project/model-profiler/)
 
+# <span style="color:teal">Plants Data Uploader</span>
+[![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)
+[![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)](https://github.com/Naereen/StrapDown.js/blob/master/LICENSE)
+
+Made for uploading the data to any FTP server, provided that correct credientials are known. Also analyze the statistics of data, e.g. how many images are available, and which person has collected more images.
+
+**Intallation**
+Read the instruction on follwing links for usage, installation and download.
+
+[![](https://github.com/Mr-TalhaIlyas/Mr-TalhaIlyas.github.io/raw/master/images/git.png "Github")](https://github.com/Mr-TalhaIlyas/PlantsDataUploader) [![](https://github.com/Mr-TalhaIlyas/Mr-TalhaIlyas.github.io/raw/master/images/pngegg%20(3).png "G Drive")](https://drive.google.com/drive/u/2/folders/1PYbKXt1IecuZO_rHEOOolLGP_W7Y8WSM)
