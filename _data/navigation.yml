@@ -9,9 +9,12 @@ main:
   # - title: "Talks"
   #  url: /talks/    
 
-  - title: "Teaching"
-    url: /teaching/    
-        
+  #- title: "Teaching"
+  #  url: /teaching/    
+  
+  - title: "Software"
+    url: /software/    
+    
   #- title: "Blog Posts"
   #  url: /year-archive/
     
