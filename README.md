@@ -1,3 +1,32 @@
+# My Instructions
+* 1. Register a GitHub account if you don't have one and confirm your e-mail (required!)
+* Fork [this repository](https://github.com/academicpages/academicpages.github.io) by clicking the "fork" button in the top right. 
+* Go to the repository's settings (rightmost item in the tabs that start with "Code", should be below "Unwatch"). Rename the repository "[your GitHub username].github.io", which will also be your website's URL.
+----------------------------------------------------------------------------------------
+1. `_data/navigation.yml` go here to change add and delete tabs/pages of your webpage.
+2. Create your own favicon in various resolutions, e.g. 16x16 and save it as `images/favicon-16x16.png` or whatever resolution. The default for web browsers is `images/favicon.ico`. You also need to remove all annoying `?v=M44lzPylqQ` strings in `_includes/head/custom.html` as well.
+3. Info about which pages to edit is in `_pages/markdown.md`
+4. Change content of main landing page in `_pages/about.md`.
+5. Change sidebar content in`_config.yml`
+6. Change how sidebar shows up in `_includes/author-profile.html`
+7. To run the site locally, run `bundle exec jekyll serve`
+8. To change formats of things, try to find the respective `.scss` file in the `_sass` folder.
+
+
+
+
+
+
+
+
+
+
+
+
+
+*******************************************************
+------------------------------------------------------
+
 A Github Pages template for academic websites. This was forked (then detached) by [Stuart Geiger](https://github.com/staeiou) from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/), which is © 2016 Michael Rose and released under the MIT License. See LICENSE.md.
 
 I think I've got things running smoothly and fixed some major bugs, but feel free to file issues or make pull requests if you want to improve the generic template / theme.
