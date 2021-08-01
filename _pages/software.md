@@ -11,7 +11,7 @@ As one of my two research agendas involves improving the tools we use to study p
 
 This repo implements CRF as described in Deeplab paper it takes about 0.2 seconds per image. Following image is taken form **DeepLab** paper
 
-<iframe src="https://github.com/Mr-TalhaIlyas/Conditional-Random-Fields-CRF/blob/master/screens/img1.png" width="256" height="256"></iframe>
+<iframe src="https://github.com/Mr-TalhaIlyas/Conditional-Random-Fields-CRF/raw/master/screens/img1.png" width="256" height="256"></iframe>
 
 **Intallation**
 ```python
