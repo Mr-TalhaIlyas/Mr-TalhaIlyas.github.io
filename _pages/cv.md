@@ -61,7 +61,7 @@ I worked in Communication Security and Embedded System Lab as a researcher in pr
   {% endfor %}</ul>
 
 ## Digital Skills
------------------------
+
 |Machine Learning Frameworks (Backend)|Programming Languages|
 |---|---|
 |•	Tensorflow|•	Python|
@@ -69,7 +69,7 @@ I worked in Communication Security and Embedded System Lab as a researcher in pr
 |•	PyTorch|•	C/C++|
 |•	Scikit-Learn|•	HTML/CSS|
 |• Matplotlib|•	JAVA Script	|
----------------------------------------
+
 |Frontend/GUI/API Development|Simulation Software / Microcontrollers|
 |---|---|
 |•	Flask|•	Simulink (Matlab)|
