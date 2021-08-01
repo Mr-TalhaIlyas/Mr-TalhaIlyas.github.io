@@ -48,17 +48,6 @@ I worked in Communication Security and Embedded System Lab as a researcher in pr
 *15/09/2017 – 14/11/2017* – Faisalabad, Pakistan
 * Installation of PFI (Power Factor Improvement) Plants and auditing, recording, paying, monitoring, and keeping the statistical record of all Electricity Usage of WASA.
 
-## Publications
------------------------
-  <ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-    
-## Projects
------------------------
-  <ul>{% for post in site.projects reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
 
 ## Digital Skills
 
