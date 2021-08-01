@@ -6,11 +6,6 @@
 # `jekyll serve`. If you change this file, please restart the server process.
 
 # Site Settings
-plugins:
-  - jekyll-remote-theme
-remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
-
 locale                   : "en-US"
 title                    : "Talha Ilyas"
 title_separator          : "-"
@@ -151,7 +146,7 @@ exclude:
   - package.json
   - tmp
   - vendor
-  - assets`
+  
 keep_files:
   - .git
   - .svn
