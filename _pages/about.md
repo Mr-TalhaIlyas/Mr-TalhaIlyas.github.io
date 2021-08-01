@@ -38,4 +38,11 @@ We are also working on depth estimation, optical flow for developing autonomous 
 * Creating and Automated Pipeline for Extracting Crown and Detecting Young Leaf and Flower Sprouts using Convolutional Neural Networks.
 * Multi-Crop Artificial Intelligent Weeding Robot (9 Year Project by KRID).
 * Segmentation of Strawberry Fruits w.r.t their Maturity Level using Machine Vision.
-* Activity Recognition using Artificial Intelligence
+* Activity Recognition using Artificial Intelligence.
+
+## Funding
+Currently, my research work is funded by follwoing organizations.
+* National Research Foundation of Korea (NRF).
+* U.S. Air Force Office of Scientific Research.
+* Agricultural Science and Technology Development Cooperation of Korea.
+* Reseach and Development Authority (RDA), Korea.
