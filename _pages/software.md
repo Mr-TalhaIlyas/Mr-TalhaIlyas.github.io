@@ -10,7 +10,7 @@ As one of my two research agendas involves improving the tools we use to study p
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) ![PyPI](https://img.shields.io/pypi/v/a) [![Downloads](https://pepy.tech/badge/seg-crf)](https://pepy.tech/project/seg-crf) [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FMr-TalhaIlyas%2FConditional-Random-Fields-CRF&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
 
 This repo implements CRF as described in Deeplab paper it takes about 0.2 seconds per image. Following image is taken form **DeepLab** paper
-
+![](https://github.com/Mr-TalhaIlyas/Conditional-Random-Fields-CRF/raw/master/screens/img1.png)
 
 **Intallation**
 ```python
