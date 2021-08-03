@@ -48,6 +48,6 @@ Currently, my research work is funded by follwoing organizations.
 * Reseach and Development Authority (RDA), Korea.
 
 <img src=
-"https://profile-counter.glitch.me/Mr-TalhaIlyas.github.io/count.svg" 
+        "https://profile-counter.glitch.me/Mr-TalhaIlyas.github.io/count.svg" 
          alt="Visitor Counter" 
          align="right">
