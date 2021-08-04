@@ -16,7 +16,6 @@ Download a copy of my [CV here](https://drive.google.com/file/d/1DiKCQETc0MHe9KL
 **MASTER OF SCIENCE IN ELECTRONICS AND INFORMATION ENGINEERING**, *JBNU, South-Korea* <br>
 Graduated: August 2021 
 * GPA: 4.00/4.00
-* Advisor: [Prof. Hyongsuk Kim](https://scholar.google.com/citations?user=ywYodqAAAAAJ&hl=en)
 
 **BACHELOR OF SCIENCE IN ELECTRICAL ENGINEERING**, *UET, Lahore, Pakistan* <br>
 Graduated: November 2017
@@ -26,8 +25,6 @@ Graduated: November 2017
 -----------------------
 **Graduate Research Assistant**, *Robot Vision Lab, JBNU, South-Korea* <br>
 *01/09/2019 – PRESENT* 
-
-Advisor: [Prof. Hyongsuk Kim](https://scholar.google.com/citations?user=ywYodqAAAAAJ&hl=en) and [Yongchae Jeong](https://scholar.google.com/citations?user=VhkRkVUAAAAJ&hl=ko)
 
 I am leading ongoing funded project on precision agriculture while forecasting future endeavors. Currently, working on different projects related to smart farming like deploying, and developing state-of-the-art deep learning algorithms to solve the problems like crop-weed classification, insects/pests’ infestation and disease detection, crop instance localization, and segmentation for precision agriculture. The aim of such fusion between deep learning and precision agriculture is to support high productivity and profitable horticulture systems along with safe and nutritious food and create a risk free and efficient recoverable environment for the communities. 
 We are also, working on depth estimation, optical flow for developing autonomous harvesters to increase farm yield and productivity. I have also done some projects on implementation of ML algorithms on edge devices, autonomous driving systems, 3D object detection, GANs and Stereo Vision.
