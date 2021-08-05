@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 <p align="justify">
-I have recently completed my master's degree and from [Jeonbuk National University, South-Korea](https://www.jbnu.ac.kr/kor/), during my degree my research area was focused on Artificial Intelligence to be more specific my studies were focused on Fundamentals Deep Learning and Machine Vision and its possible applications real life. 
+I have recently completed my master's degree and from <a href="https://www.jbnu.ac.kr/kor/">Jeonbuk National University, South-Korea</a>, during my degree my research area was focused on Artificial Intelligence to be more specific my studies were focused on Fundamentals Deep Learning and Machine Vision and its possible applications real life. 
 </p>
 
 <p align="justify">
