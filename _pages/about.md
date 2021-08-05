@@ -7,11 +7,13 @@ redirect_from:
   - /about/
   - /about.html
 ---
-
+<p align="justify">
 I have recently completed my master's degree and from [Jeonbuk National University, South-Korea](https://www.jbnu.ac.kr/kor/), during my degree my research area was focused on Artificial Intelligence to be more specific my studies were focused on Fundamentals Deep Learning and Machine Vision and its possible applications real life. 
+</p>
 
+<p align="justify">
 We are also working on depth estimation, optical flow for developing autonomous harvesters, medical image analysis and tumor detection. I have also done some projects on implementation of ML algorithms on edge devices, autonomous driving systems, 3D object detection, GANs and Stereo Vision.
-
+</p>
 
 ### _Affiliations_  
 [![](https://github.com/Mr-TalhaIlyas/Mr-TalhaIlyas/raw/main/files/r.png "Robot Vision Lab, JBNU, South Korea.")](https://home.jbnu.ac.kr/robotv/index.htm) 
