@@ -12,7 +12,7 @@ I have recently completed my master's degree and from <a href="https://www.jbnu.
 </p>
 
 <p align="justify">
-We are also working on depth estimation, optical flow for developing autonomous harvesters, medical image analysis and tumor detection. I have also done some projects on implementation of ML algorithms on edge devices, autonomous driving systems, 3D object detection, GANs and Stereo Vision.
+We are also working on depth estimation, optical flow for developing autonomous harvesters, medical image analysis and tumor detection. I am also interested in  implementation of ML algorithms on edge devices, autonomous driving systems, 3D object detection, GANs and Stereo Vision.
 </p>
 
 ### _Affiliations_  
@@ -20,6 +20,8 @@ We are also working on depth estimation, optical flow for developing autonomous 
 [![](https://github.com/Mr-TalhaIlyas/Mr-TalhaIlyas/raw/main/files/j.jpg "Jeonbuk National University, South Korea.")](https://www.jbnu.ac.kr/kor/) 
 [![](https://github.com/Mr-TalhaIlyas/Mr-TalhaIlyas/raw/main/files/u.png "University of Engineering and Technology Lahore, Pakistan.")](https://www.uet.edu.pk/) 
 
+## Honors, Awards and Certifications
+[![Generic badge](https://img.shields.io/badge/ComingSoon-🚧Loading...🚧-green.svg)](https://shields.io/)
 ## Updates
 
 ### Under Review Papers 
