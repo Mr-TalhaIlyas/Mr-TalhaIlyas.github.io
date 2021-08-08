@@ -9,7 +9,7 @@ redirect_from:
 
 {% include base_path %}
 
-Download a copy of my [CV here](https://github.com/Mr-TalhaIlyas/Mr-TalhaIlyas.github.io/blob/master/files/CV_Talha_Ilyas.pdf)
+Download a copy of my [CV here](https://drive.google.com/file/d/1H2SDrX9ybWptxYCJrUaq4nta-UoJ9aID/view?usp=sharing)
 
 ## Education
 -----------------------
