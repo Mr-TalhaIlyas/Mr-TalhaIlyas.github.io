@@ -21,7 +21,10 @@ We are also working on depth estimation, optical flow for developing autonomous 
 [![](https://github.com/Mr-TalhaIlyas/Mr-TalhaIlyas/raw/main/files/u.png "University of Engineering and Technology Lahore, Pakistan.")](https://www.uet.edu.pk/) 
 
 ## Honors, Awards and Certifications
-[![Generic badge](https://img.shields.io/badge/ComingSoon-🚧Loading...🚧-green.svg)](https://shields.io/)
+
+<center><img src = "https://github.com/Mr-TalhaIlyas/Mr-TalhaIlyas.github.io/raw/master/images/loading.gif" ></center>
+        
+
 ## Updates
 
 ### Under Review Papers 
