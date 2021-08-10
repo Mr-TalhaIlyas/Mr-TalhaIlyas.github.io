@@ -22,7 +22,10 @@ We are also working on depth estimation, optical flow for developing autonomous 
 
 ## Honors, Awards and Certifications
 
-<center><img src = "https://github.com/Mr-TalhaIlyas/Mr-TalhaIlyas.github.io/raw/master/images/loading.gif" ></center>
+* [Brain Korea (BK21) Scholarship](https://bk21four.nrf.re.kr/)
+* [JBNU President's Award (Excellent Research Award)](https://mse.jbnu.ac.kr/mse/3231/subview.do;jsessionid=7688FD046EAE8E869CA348EB0728C06A?enc=Zm5jdDF8QEB8JTJGYmJzJTJGbXNlJTJGNzkxJTJGMTgyOTg0JTJGYXJ0Y2xWaWV3LmRvJTNG)
+
+<!--- <center><img src = "https://github.com/Mr-TalhaIlyas/Mr-TalhaIlyas.github.io/raw/master/images/loading.gif" ></center> -->
         
 
 ## Updates
