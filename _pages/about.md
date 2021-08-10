@@ -57,6 +57,9 @@ Currently, my research work is funded by follwoing organizations.
 * Agricultural Science and Technology Development Cooperation of Korea.
 * Reseach and Development Authority (RDA), Korea.
 
+
+<span id="badgeCont232"><script type="text/javascript" src="https://publons.com/mashlets?el=badgeCont232&rid=AAQ-9028-2021"></script></span>
+
 <img src=
         "https://profile-counter.glitch.me/Mr-TalhaIlyas.github.io/count.svg" 
          alt="Visitor Counter" 
