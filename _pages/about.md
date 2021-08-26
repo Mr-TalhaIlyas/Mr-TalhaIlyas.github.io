@@ -20,6 +20,8 @@ We are also working on depth estimation, optical flow for developing autonomous 
 [![](https://github.com/Mr-TalhaIlyas/Mr-TalhaIlyas/raw/main/files/j.jpg "Jeonbuk National University, South Korea.")](https://www.jbnu.ac.kr/kor/) 
 [![](https://github.com/Mr-TalhaIlyas/Mr-TalhaIlyas/raw/main/files/u.png "University of Engineering and Technology Lahore, Pakistan.")](https://www.uet.edu.pk/) 
 
+<span id="badgeCont232"><script type="text/javascript" src="https://publons.com/mashlets?el=badgeCont232&rid=AAQ-9028-2021"></script></span>
+
 ## Honors, Awards and Certifications
 
 * [JBNU Presidential Award (Excellent Researcher Award)](https://drive.google.com/file/d/1jPiXnTchjSyRU8_2_EHrOJgwRvGtAoCZ/view?usp=sharing)
@@ -62,7 +64,6 @@ Currently, my research work is funded by follwoing organizations.
 * Reseach and Development Authority (RDA), Korea.
 
 
-<span id="badgeCont232"><script type="text/javascript" src="https://publons.com/mashlets?el=badgeCont232&rid=AAQ-9028-2021"></script></span>
 
 <img src=
         "https://profile-counter.glitch.me/Mr-TalhaIlyas.github.io/count.svg" 
