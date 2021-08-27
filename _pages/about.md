@@ -14,7 +14,9 @@ I have recently completed my master's degree and from <a href="https://www.jbnu.
 <p align="justify">
 We are also working on depth estimation, optical flow for developing autonomous harvesters, medical image analysis and tumor detection. I am also interested in  implementation of ML algorithms on edge devices, autonomous driving systems, 3D object detection, GANs and Stereo Vision.
 </p>
+
 <span id="badgeCont232"><script type="text/javascript" src="https://publons.com/mashlets?el=badgeCont232&rid=AAQ-9028-2021"></script></span>
+
 ### _Affiliations_  
 [![](https://github.com/Mr-TalhaIlyas/Mr-TalhaIlyas/raw/main/files/r.png "Robot Vision Lab, JBNU, South Korea.")](https://home.jbnu.ac.kr/robotv/index.htm) 
 [![](https://github.com/Mr-TalhaIlyas/Mr-TalhaIlyas/raw/main/files/j.jpg "Jeonbuk National University, South Korea.")](https://www.jbnu.ac.kr/kor/) 
