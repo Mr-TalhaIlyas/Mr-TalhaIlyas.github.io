@@ -38,10 +38,10 @@ We are also working on depth estimation, optical flow for developing autonomous 
 
 ### Under Review Papers 
 1. Ilyas, T.; Mannan, Z. I.; Khan, A; Azam, S; De Boer, F; Kim, H. “TSFD-Net: Tissue specific feature distillation Network for Nuclei Segmentation and Classification,” [ELSEVIER Neural Networks](https://www.journals.elsevier.com/neural-networks) (Under Review) [ID: NEUNET-D-21-00631]
-2. Ilyas, T.; Khan, A.; Umraiz, M.; Kim,: “Multi-Scale Context Aggregation for Strawberry Fruit Grading and Disease Phenotyping”, [IEEE Access](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6287639), (Under Review) [ID: Access-2021-26410]
 
 ### Recently Accepted
 1. Ilyas, T.; Kim,: “A Deep Learning Based Approach for Strawberry Yield Prediction via Semantic Graphics”, [ICCAS 2021](http://2021.iccas.org/). 
+2. Ilyas, T.; Khan, A.; Umraiz, M.; Kim,: “Multi-Scale Context Aggregation for Strawberry Fruit Grading and Disease Phenotyping”, [IEEE Access](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6287639).
 
 ### Bug Fixes in Libraries, Packages and Softwares.
 1. Released New version of `model-profiler` version==1.1.8, after minor bug fixes. [link](https://pypi.org/project/model-profiler/)
