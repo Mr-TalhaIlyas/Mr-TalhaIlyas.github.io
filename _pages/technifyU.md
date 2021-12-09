@@ -12,8 +12,8 @@ author_profile: true
 <center><img src = '/images/technifyU/tu.png'></center>
 
 ## About 
-
-Providing artificially intelligent/deep learning powered Software, Websites, Mobile app solutions and services. Other information technology and data annotation services like 2D/3D bounding boxes, semantic/instance segmentation, image labeling and categorization, lines & spinlines, Lidars & more.
+<p align="justify">
+Providing artificially intelligent/deep learning powered Software, Websites, Mobile app solutions and services. Other information technology and data annotation services like 2D/3D bounding boxes, semantic/instance segmentation, image labeling and categorization, lines & spinlines, Lidars & more.</p>
 
 ### More About Us
 
