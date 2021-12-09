@@ -6,6 +6,7 @@ author_profile: true
 ---
 
 {% include base_path %}
+<link rel="icon" type="image/png" href="{{ base_path }}/images/technifyU/log.png?v=M44lzPylqQ" sizes="16x16">
 
 
 <center><img src = '/images/technifyU/tu.png'></center>
