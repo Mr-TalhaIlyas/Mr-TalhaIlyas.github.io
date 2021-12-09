@@ -21,9 +21,11 @@ main:
   - title: "CV"
     url: /cv/
     
+  - title: "Solutions&Services"
+    url: /technifyU/
+    
   #- title: "Guide"
   #  url: /markdown/
 
-- title: "Solutions&Services"
-    url: /technifyu/
+
     
