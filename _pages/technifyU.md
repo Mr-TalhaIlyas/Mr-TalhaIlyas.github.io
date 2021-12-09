@@ -13,7 +13,7 @@ author_profile: true
 
 ## About 
 
-Providing AI/DL powered Softwares, Websites, Mobile app solutions and Services.
+Providing artificially intelligent/deep learning powered Software, Websites, Mobile app solutions and services. Other information technology and data annotation services like 2D/3D bounding boxes, semantic/instance segmentation, image labeling and categorization, lines & spinlines, Lidars & more.
 
 ### More About Us
 
