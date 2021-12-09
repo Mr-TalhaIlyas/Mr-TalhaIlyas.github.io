@@ -9,3 +9,8 @@ author_profile: true
 
 
 
+![alt text](/images/technifyU/tu.png)
+
+## About 
+
+Providing AI/DL powered Softwares, Websites, Mobile app solutions and Services.
