@@ -8,8 +8,7 @@ author_profile: true
 {% include base_path %}
 
 
-
-![alt text](/images/technifyU/tu.png)
+<center><img src = '/images/technifyU/tu.png'></center>
 
 ## About 
 
