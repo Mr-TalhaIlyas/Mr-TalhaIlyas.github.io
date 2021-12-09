@@ -11,6 +11,7 @@
 6. Change how sidebar shows up in `_includes/author-profile.html`
 7. To run the site locally, run `bundle exec jekyll serve`
 8. To change formats of things, try to find the respective `.scss` file in the `_sass` folder.
+9. Add page via `data` then add in `navigation.yaml`.
 
 
 
