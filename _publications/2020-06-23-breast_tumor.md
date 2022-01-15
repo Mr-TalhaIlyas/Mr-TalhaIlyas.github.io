@@ -7,7 +7,7 @@ date: 2020-06-23
 venue: ICROS 35th symposium
 imageurl: '/images/publications/breast_tumor.png'
 paperurl: '/files/breast_tumor.pdf'
-link: 'https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE09410358'
+link: 'https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE10609135'
 citation: 'Ilyas, T., Kim, S. & Kim, H. (2021). Tumor Detection in Breast Histopathology Images via modified Faster-RCNN. Proceedings of the domestic conference of the Control Robot System Society(ICROS), 2021.'
 ---
 
