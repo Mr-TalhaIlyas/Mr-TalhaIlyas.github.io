@@ -39,7 +39,7 @@ We are also working on depth estimation, optical flow for developing autonomous 
 ### Under Review Papers 
 1. Ilyas, T.; Mannan, Z. I.; Khan, A; Azam, S; De Boer, F; Kim, H. “TSFD-Net: Tissue specific feature distillation Network for Nuclei Segmentation and Classification,” [ELSEVIER Neural Networks](https://www.journals.elsevier.com/neural-networks) (Revision Submitted) 
 2. Khan, A; Ilyas, T.; Jin, H.; Lee, J; Lee, S. J.; Kim, H. “A Method for End-to-End Supervised Stereo Imaging-Based Depth Estimation,” [ELSEVIER Neurocomputing](https://www.journals.elsevier.com/neurocomputing) (Under Review)
-3. Lee, J; Ilyas, T.; Jin, H.; Lee, J; Lee, S. J.; Kim, H. “CFS-Label: A Coarse to Fine Segmentation Labelling Algorithm,” [ELSEVIER Information Processing & Management](https://www.journals.elsevier.com/computers-and-electronics-in-agriculture) (Under Review)
+3. Lee, J; Ilyas, T.; Jin, H.; Lee, J; Lee, S. J.; Kim, H. “CFS-Label: A Coarse to Fine Segmentation Labelling Algorithm,” [ELSEVIER Information Processing & Management](https://www.sciencedirect.com/journal/information-processing-and-management) (Under Review)
 
 ### Recently Accepted
 
