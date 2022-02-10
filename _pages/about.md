@@ -21,7 +21,7 @@ We are also working on depth estimation, optical flow for developing autonomous 
 [![](https://github.com/Mr-TalhaIlyas/Mr-TalhaIlyas/raw/main/files/r.png "Robot Vision Lab, JBNU, South Korea.")](https://home.jbnu.ac.kr/robotv/index.htm) 
 [![](https://github.com/Mr-TalhaIlyas/Mr-TalhaIlyas/raw/main/files/j.jpg "Jeonbuk National University, South Korea.")](https://www.jbnu.ac.kr/kor/) 
 [![](https://github.com/Mr-TalhaIlyas/Mr-TalhaIlyas/raw/main/files/u.png "University of Engineering and Technology Lahore, Pakistan.")](https://www.uet.edu.pk/) 
-<!---[![](https://github.com/Mr-TalhaIlyas/Mr-TalhaIlyas/raw/main/files/m.png "Monash Medical AI, Australia")](https://www.monash.edu/mmai-group/people) -->
+<!---[![](https://github.com/Mr-TalhaIlyas/Mr-TalhaIlyas/raw/main/files/m.png "Monash Medical AI, Australia")](https://www.monash.edu/mmai-group/people) 
 
 
 ## Honors, Awards and Certifications
