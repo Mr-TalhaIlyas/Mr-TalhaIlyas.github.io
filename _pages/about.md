@@ -37,8 +37,7 @@ We are also working on depth estimation, optical flow for developing autonomous 
 ## Updates
 
 ### Under Review Papers 
-1. Ilyas, T.; Mannan, Z. I.; Khan, A; Azam, S; De Boer, F; Kim, H. “TSFD-Net: Tissue specific feature distillation Network for Nuclei Segmentation and Classification,” [ELSEVIER Neural Networks](https://www.journals.elsevier.com/neural-networks) (Revision Submitted) 
-2. Lee, J; Ilyas, T.; Jin, H.; Lee, J; Lee, S. J.; Kim, H. “CFS-Label: A Coarse to Fine Segmentation Labelling Algorithm,” [Nautre Scientific Reports](https://www.nature.com/srep/about?gclid=Cj0KCQiAu62QBhC7ARIsALXijXQ5nbPiBxPr-ObtuQf1YZhoRAxj_2IMYxTM6Qvexf1kfpxKLOqN8ogaAg6MEALw_wcB) (Under Review)
+1. Lee, J; Ilyas, T.; Jin, H.; Lee, J; Lee, S. J.; Kim, H. “CFS-Label: A Coarse to Fine Segmentation Labelling Algorithm,” [Nautre Scientific Reports](https://www.nature.com/srep/about?gclid=Cj0KCQiAu62QBhC7ARIsALXijXQ5nbPiBxPr-ObtuQf1YZhoRAxj_2IMYxTM6Qvexf1kfpxKLOqN8ogaAg6MEALw_wcB) (Under Review)
 
 ### Recently Accepted
 1. Ilyas, T.; Mannan, Z. I.; Khan, A; Azam, S; De Boer, F; Kim, H. “TSFD-Net: Tissue specific feature distillation Network for Nuclei Segmentation and Classification,” [ELSEVIER Neural Networks](https://www.journals.elsevier.com/neural-networks)
