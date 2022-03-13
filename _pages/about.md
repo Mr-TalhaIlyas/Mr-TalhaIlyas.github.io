@@ -40,7 +40,7 @@ We are also working on depth estimation, optical flow for developing autonomous 
 1. Lee, J; Ilyas, T.; Jin, H.; Lee, J; Lee, S. J.; Kim, H. “CFS-Label: A Coarse to Fine Segmentation Labelling Algorithm,” [Nautre Scientific Reports](https://www.nature.com/srep/about?gclid=Cj0KCQiAu62QBhC7ARIsALXijXQ5nbPiBxPr-ObtuQf1YZhoRAxj_2IMYxTM6Qvexf1kfpxKLOqN8ogaAg6MEALw_wcB) (Under Review)
 
 ### Recently Accepted
-1. Ilyas, T.; Mannan, Z. I.; Khan, A; Azam, S; De Boer, F; Kim, H. “TSFD-Net: Tissue specific feature distillation Network for Nuclei Segmentation and Classification,” [ELSEVIER Neural Networks](https://www.journals.elsevier.com/neural-networks)
+1. Ilyas, T.; Mannan, Z. I.; Khan, A; Azam, S; De Boer, F; Kim, H. “TSFD-Net: Tissue specific feature distillation Network for Nuclei Segmentation and Classification,” [ELSEVIER Neural Networks](https://www.sciencedirect.com/science/article/pii/S0893608022000612)
 
 ### Bug Fixes in Libraries, Packages and Softwares.
 1. Released New version of `model-profiler` version==1.1.8, after minor bug fixes. [link](https://pypi.org/project/model-profiler/)
