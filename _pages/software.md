@@ -18,7 +18,7 @@ Files/Data management utilities for large datasets and nested directories.
 pip install fmutils
 ```
 
-[![](https://github.com/Mr-TalhaIlyas/Mr-TalhaIlyas.github.io/raw/master/images/git.png "Github")](https://github.com/Mr-TalhaIlyas/EMPatches) [![](https://github.com/Mr-TalhaIlyas/Mr-TalhaIlyas.github.io/raw/master/images/pngegg%20(3).png "PyPi")](https://pypi.org/project/empatches/)
+[![](https://github.com/Mr-TalhaIlyas/Mr-TalhaIlyas.github.io/raw/master/images/git.png "Github")](https://github.com/Mr-TalhaIlyas/FMUtils) [![](https://github.com/Mr-TalhaIlyas/Mr-TalhaIlyas.github.io/raw/master/images/pngegg%20(3).png "PyPi")](https://pypi.org/project/fmutils/)
 
 
 
