@@ -29,7 +29,7 @@ pip install fmutils
 
 Extract and Merge image patches for easy, fast and self-contained digital image processing and deep learning model training.
 
-<img src="https://github.com/Mr-TalhaIlyas/EMPatches/blob/main/screens/emp.png" width="450" height="250">
+<img src="https://github.com/Mr-TalhaIlyas/EMPatches/raw/main/screens/emp.png" width="450" height="250">
 
 **Intallation**
 
