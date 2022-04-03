@@ -10,7 +10,7 @@ As one of my two research agendas involves improving the tools we use to study p
 
 Extract and Merge image patches for easy, fast and self-contained digital image processing and deep learning model training.
 
-<img src="https://github.com/Mr-TalhaIlyas/Conditional-Random-Fields-CRF/raw/master/screens/emp.png" width="350" height="250">
+<img src="https://github.com/Mr-TalhaIlyas/EMPatches/blob/main/screens/emp.png" width="450" height="250">
 
 **Intallation**
 
