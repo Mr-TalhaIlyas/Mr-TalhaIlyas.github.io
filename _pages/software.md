@@ -5,6 +5,25 @@ title: "Software"
 
 As one of my two research agendas involves improving the tools we use to study peace and conflict. Below you'll find some toolkits and software whihc might prove helpful to other researchers in machine learning field.
 
+# <span style="color:teal">Files Management Utilities (FMUtils)</span>
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) ![PyPI](https://img.shields.io/pypi/v/a) [![Downloads](https://pepy.tech/badge/fmutils)](https://pepy.tech/project/fmutils) [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fpypi.org%2Fproject%2Ffmutils&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
+
+Files/Data management utilities for large datasets and nested directories.
+
+<!-- <img src="https://github.com/Mr-TalhaIlyas/EMPatches/blob/main/screens/emp.png" width="450" height="250"> --->
+
+**Intallation**
+
+```r
+pip install fmutils
+```
+
+[![](https://github.com/Mr-TalhaIlyas/Mr-TalhaIlyas.github.io/raw/master/images/git.png "Github")](https://github.com/Mr-TalhaIlyas/EMPatches) [![](https://github.com/Mr-TalhaIlyas/Mr-TalhaIlyas.github.io/raw/master/images/pngegg%20(3).png "PyPi")](https://pypi.org/project/empatches/)
+
+
+
+
+
 # <span style="color:teal">Extract and Merge Image Patches  (EMPatches)</span>
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) ![PyPI](https://img.shields.io/pypi/v/a) [![Downloads](https://pepy.tech/badge/empatches)](https://pepy.tech/project/empatches) [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fpypi.org%2Fproject%2Fempatches%2F&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
 
