@@ -43,7 +43,7 @@ We are also working on depth estimation, optical flow for developing autonomous 
 1. Ilyas, T.; Mannan, Z. I.; Khan, A; Azam, S; De Boer, F; Kim, H. “TSFD-Net: Tissue specific feature distillation Network for Nuclei Segmentation and Classification,” [ELSEVIER Neural Networks](https://www.sciencedirect.com/science/article/pii/S0893608022000612)
 
 ### Bug Fixes in Libraries, Packages and Softwares.
-1. Released New version of `model-profiler` version==1.1.8, after minor bug fixes. [link](https://pypi.org/project/model-profiler/)
+1. Uploaded a new package for Files/Data management utilities for large datasets and nested directories. [link](https://pypi.org/project/fmutils/)
 2. Fixed language error while uploading data in `FTP_Data_Uploader.exe`, new version==1.0.5. [link](https://github.com/Mr-TalhaIlyas/PlantsDataUploader)
 
 ## Ongoing Porjects
