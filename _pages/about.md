@@ -37,7 +37,7 @@ We are also working on depth estimation, optical flow for developing autonomous 
 ## Updates
 
 ### Under Review Papers 
-1.
+1. A Deep Learning Based Plant Disease Phenotyping System wiht Disease Severity Assessment [Computers and Electronics in Agriculture]()
 
 ### Recently Accepted
 1. Ilyas, T.; Mannan, Z. I.; Khan, A; Azam, S; De Boer, F; Kim, H. “TSFD-Net: Tissue specific feature distillation Network for Nuclei Segmentation and Classification,” [ELSEVIER Neural Networks](https://www.sciencedirect.com/science/article/pii/S0893608022000612)
