@@ -18,7 +18,7 @@ We are also working on depth estimation, optical flow for developing autonomous 
 <span id="badgeCont232"><script type="text/javascript" src="https://publons.com/mashlets?el=badgeCont232&rid=AAQ-9028-2021"></script></span>
 
 ### _Affiliations_  
-[![](https://github.com/Mr-TalhaIlyas/Mr-TalhaIlyas/raw/main/files/r.png "Robot Vision Lab, JBNU, South Korea.")](https://home.jbnu.ac.kr/robotv/index.htm) 
+[![](https://github.com/Mr-TalhaIlyas/Mr-TalhaIlyas/raw/main/files/r.png "Intelligence Robot Research Center, JBNU, South Korea.")](https://robot.jbnu.ac.kr/robot/21492/subview.do) 
 [![](https://github.com/Mr-TalhaIlyas/Mr-TalhaIlyas/raw/main/files/j.jpg "Jeonbuk National University, South Korea.")](https://www.jbnu.ac.kr/kor/) 
 [![](https://github.com/Mr-TalhaIlyas/Mr-TalhaIlyas/raw/main/files/u.png "University of Engineering and Technology Lahore, Pakistan.")](https://www.uet.edu.pk/) 
 [![](https://github.com/Mr-TalhaIlyas/Mr-TalhaIlyas/raw/main/files/m.png "Monash Medical AI, Australia")](https://www.monash.edu/mmai-group/people) 
