@@ -41,7 +41,7 @@ We are also working on depth estimation, optical flow for developing autonomous 
 
 ### Recently Accepted
 1. Ilyas, T.; Mannan, Z. I.; Khan, A; Azam, S; De Boer, F; Kim, H. *“TSFD-Net: Tissue specific feature distillation Network for Nuclei Segmentation and Classification,”* [ELSEVIER Neural Networks](https://www.sciencedirect.com/science/article/pii/S0893608022000612)
-2. Lee, J; Ilyas, T.; Jin, H.; Lee, J; Lee, S. J.; Kim, H. *“CFS-Label: A Coarse to Fine Segmentation Labelling Algorithm,”* [Nautre Scientific Reports](https://www.nature.com/srep/about?gclid=Cj0KCQiAu62QBhC7ARIsALXijXQ5nbPiBxPr-ObtuQf1YZhoRAxj_2IMYxTM6Qvexf1kfpxKLOqN8ogaAg6MEALw_wcB)
+2. Lee, J; Ilyas, T.; Jin, H.; Lee, J; Lee, S. J.; Kim, H. *“A Coarse to Fine Segmentation Labelling Algorithm,”* [Nautre Scientific Reports](https://www.nature.com/srep/about?gclid=Cj0KCQiAu62QBhC7ARIsALXijXQ5nbPiBxPr-ObtuQf1YZhoRAxj_2IMYxTM6Qvexf1kfpxKLOqN8ogaAg6MEALw_wcB)
 
 ### Bug Fixes in Libraries, Packages and Softwares.
 1. Uploaded a new package for files/data management utilities for large datasets and nested directories. [link](https://pypi.org/project/fmutils/)
