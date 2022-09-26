@@ -53,7 +53,7 @@ I worked in Communication Security and Embedded System Lab as a researcher in pr
 |---|---|
 |•	Tensorflow|•	Python|
 |•	Keras|•	MATLAB|
-|•	PyTorch|•	C/C++|
+|•	PyTorch|•	C++|
 |•	Scikit-Learn|•	HTML/CSS|
 |• Matplotlib|•	JAVA Script	|
 
