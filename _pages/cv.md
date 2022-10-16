@@ -16,7 +16,7 @@ Download a copy of my [CV here](https://drive.google.com/file/d/1k7IOc0CxG-RHF0Z
 **MASTER OF SCIENCE IN ELECTRONICS AND INFORMATION ENGINEERING**, *JBNU, South-Korea* <br>
 Graduated: August 2021 
 * GPA: 4.00/4.00
-* *[Thesis](https://dl.jbnu.ac.kr/search/detail/CATTOT000000928377?mainLink=/search/tot&briefLink=/search/tot/result?st=FRNT_A_q=%ED%83%88%ED%95%98%EC%9D%BC%EB%A6%AC%EC%95%84%EC%8A%A4_A_si=2#)*
+* *[Thesis](https://dl.jbnu.ac.kr/search/detail/CATTOT000000928377?mainLink=/search/tot&briefLink=/search/tot/result?st=FRNT_A_q=%ED%83%88%ED%95%98%EC%9D%BC%EB%A6%AC%EC%95%84%EC%8A%A4_A_si=2#)* / *[Paper](https://www.frontiersin.org/articles/10.3389/fpls.2022.983625/full)*
 
 **BACHELOR OF SCIENCE IN ELECTRICAL ENGINEERING**, *UET, Lahore, Pakistan* <br>
 Graduated: November 2017
