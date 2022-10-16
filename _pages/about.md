@@ -37,11 +37,10 @@ We are also working on depth estimation, optical flow for developing autonomous 
 ## Updates
 
 ### Under Review Papers 
-1. Ilyas, T.; Jin, H.; Lee, S. J.; Kim, H. *A Deep Learning Based Plant Disease Phenotyping System wiht Disease Severity Assessment* [Engineering Appliations of Artificial Intelligence](https://www.journals.elsevier.com/engineering-applications-of-artificial-intelligence)
 
 ### Recently Accepted
-1. Ilyas, T.; Mannan, Z. I.; Khan, A; Azam, S; De Boer, F; Kim, H. *“TSFD-Net: Tissue specific feature distillation Network for Nuclei Segmentation and Classification,”* [ELSEVIER Neural Networks](https://www.sciencedirect.com/science/article/pii/S0893608022000612)
-2. Lee, J; Ilyas, T.; Jin, H.; Lee, J; Lee, S. J.; Kim, H. *“A Coarse to Fine Segmentation Labelling Algorithm,”* [Nautre Scientific Reports](https://www.nature.com/srep/about?gclid=Cj0KCQiAu62QBhC7ARIsALXijXQ5nbPiBxPr-ObtuQf1YZhoRAxj_2IMYxTM6Qvexf1kfpxKLOqN8ogaAg6MEALw_wcB)
+1. Ilyas, T.; Jin, H.; Lee, S. J.; Kim, H. *DIANA: A deep learning-based paprika plant disease and pest phenotyping system with disease severity analysis* [Frontiers in Plant Science](https://www.frontiersin.org/articles/10.3389/fpls.2022.983625/full)
+
 
 ### Bug Fixes in Libraries, Packages and Softwares.
 1. Uploaded a new package for files/data management utilities for large datasets and nested directories. [link](https://pypi.org/project/fmutils/)
