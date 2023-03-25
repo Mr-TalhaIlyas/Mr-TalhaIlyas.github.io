@@ -37,8 +37,8 @@ We are also working on depth estimation, optical flow for developing autonomous 
 ## Updates
 
 ### Under Review Papers 
-1. Adaptive Deep Learning for Crop Weed Discrimination in Unseen Fields.[Computers and Electronics in Agriculture]()
-2. Eco-Friendly Weeding through Precise Detection of Growing Points via Efficient Multi-Branch Convolutional Neural Networks.[Computers and Electronics in Agriculture]()
+1. Adaptive Deep Learning for Crop Weed Discrimination in Unseen Fields.[Computers and Electronics in Agriculture](https://www.sciencedirect.com/journal/computers-and-electronics-in-agriculture) [Available at SSRN](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4345158)
+2. Eco-Friendly Weeding through Precise Detection of Growing Points via Efficient Multi-Branch Convolutional Neural Networks.
 
 ### Recently Accepted
 1. Ilyas, T.; Jin, H.; Lee, S. J.; Kim, H. *DIANA: A deep learning-based paprika plant disease and pest phenotyping system with disease severity analysis* [Frontiers in Plant Science](https://www.frontiersin.org/articles/10.3389/fpls.2022.983625/full)
