@@ -28,7 +28,7 @@ We are also working on depth estimation, optical flow for developing autonomous 
 
 * [JBNU Presidential Award (Excellent Researcher Award)](https://drive.google.com/file/d/1jPiXnTchjSyRU8_2_EHrOJgwRvGtAoCZ/view?usp=sharing)
 * [JBNU Acadamic Scholarship](https://drive.google.com/file/d/1V-nOoyyYGdBrVBhmb56B8dksXujoAZ5C/view?usp=sharing)
-* [Brain Korea (BK21) Scholarship](https://drive.google.com/drive/u/1/folders/1OexKJ8NqeY89yuj8T2duToZP1OQ3uAzQ)
+* [Brain Korea (BK21) Scholarship](https://drive.google.com/file/d/1qNbKsx6Pka9OquIMod4Ly5xcDtPhQ7hi/view?usp=share_link)
 * [Pakistan Engineering Council Registered Engineer](https://verification.pec.org.pk/v/eV/sED/i.aspx?eid=322F3638333437)
 
 <!--- <center><img src = "https://github.com/Mr-TalhaIlyas/Mr-TalhaIlyas.github.io/raw/master/images/loading.gif" ></center> -->
