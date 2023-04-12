@@ -27,8 +27,8 @@ We are also working on depth estimation, optical flow for developing autonomous 
 ## Honors, Awards and Certifications
 
 * [JBNU Presidential Award (Excellent Researcher Award)](https://drive.google.com/file/d/1jPiXnTchjSyRU8_2_EHrOJgwRvGtAoCZ/view?usp=sharing)
+* [Brain Korea (BK21) Fellowship](https://drive.google.com/file/d/1qNbKsx6Pka9OquIMod4Ly5xcDtPhQ7hi/view?usp=share_link) [Link](https://bk.jbnu.ac.kr/jiant/19164/subview.do?enc=Zm5jdDF8QEB8JTJGYmJzJTJGamlhbnQlMkYzMjQyJTJGMzAwNzAwJTJGYXJ0Y2xWaWV3LmRvJTNGcGFnZSUzRDElMjZzcmNoQ29sdW1uJTNEJTI2c3JjaFdyZCUzRCUyNmJic0NsU2VxJTNEJTI2YmJzT3BlbldyZFNlcSUzRCUyNnJnc0JnbmRlU3RyJTNEJTI2cmdzRW5kZGVTdHIlM0QlMjZpc1ZpZXdNaW5lJTNEZmFsc2UlMjZwYXNzd29yZCUzRCUyNg%3D%3D)
 * [JBNU Acadamic Scholarship](https://drive.google.com/file/d/1V-nOoyyYGdBrVBhmb56B8dksXujoAZ5C/view?usp=sharing)
-* [Brain Korea (BK21) Scholarship](https://drive.google.com/file/d/1qNbKsx6Pka9OquIMod4Ly5xcDtPhQ7hi/view?usp=share_link) [Link](https://bk.jbnu.ac.kr/jiant/19164/subview.do?enc=Zm5jdDF8QEB8JTJGYmJzJTJGamlhbnQlMkYzMjQyJTJGMzAwNzAwJTJGYXJ0Y2xWaWV3LmRvJTNGcGFnZSUzRDElMjZzcmNoQ29sdW1uJTNEJTI2c3JjaFdyZCUzRCUyNmJic0NsU2VxJTNEJTI2YmJzT3BlbldyZFNlcSUzRCUyNnJnc0JnbmRlU3RyJTNEJTI2cmdzRW5kZGVTdHIlM0QlMjZpc1ZpZXdNaW5lJTNEZmFsc2UlMjZwYXNzd29yZCUzRCUyNg%3D%3D)
 * [Pakistan Engineering Council Registered Engineer](https://verification.pec.org.pk/v/eV/sED/i.aspx?eid=322F3638333437)
 
 <!--- <center><img src = "https://github.com/Mr-TalhaIlyas/Mr-TalhaIlyas.github.io/raw/master/images/loading.gif" ></center> -->
