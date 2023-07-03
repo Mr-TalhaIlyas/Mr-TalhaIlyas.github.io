@@ -21,6 +21,7 @@ Graduated: August 2021
 **BACHELOR OF SCIENCE IN ELECTRICAL ENGINEERING**, *UET, Lahore, Pakistan* <br>
 Graduated: November 2017
 * GPA: 3.36/4.00
+* *[Thesis](https://drive.google.com/file/d/1bpccrf7XCJdqwPq9Elsi9QbBayNc7Aj0/view?usp=sharing)*
 
 ## Research experience
 -----------------------
