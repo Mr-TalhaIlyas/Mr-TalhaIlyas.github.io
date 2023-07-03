@@ -25,7 +25,7 @@ Graduated: November 2017
 
 ## Research experience
 -----------------------
-**Graduate Research Assistant**, *Robot Vision Lab, JBNU, South-Korea* <br>
+**Graduate Research Assistant**, *Robot Vision Lab, Core Research Institute of Intelligent Robots, JBNU, South-Korea* <br>
 *01/09/2019 – PRESENT* 
 
 I am leading ongoing funded project on precision agriculture while forecasting future endeavors. Currently, working on different projects related to smart farming like deploying, and developing state-of-the-art deep learning algorithms to solve the problems like crop-weed classification, insects/pests’ infestation and disease detection, crop instance localization, and segmentation for precision agriculture. The aim of such fusion between deep learning and precision agriculture is to support high productivity and profitable horticulture systems along with safe and nutritious food and create a risk free and efficient recoverable environment for the communities. 
