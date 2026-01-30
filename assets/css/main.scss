@@ -8,6 +8,8 @@
  *  - mademistakes.com
  *  - https://twitter.com/mmistakes
  *
+ *  Redesigned with Futuristic Dark Theme
+ *
 */
 
 @import "vendor/breakpoint/breakpoint"; // media query mixins
@@ -40,3 +42,6 @@
 @import "vendor/font-awesome/brands";
 @import "vendor/magnific-popup/magnific-popup";
 @import "print";
+
+// Futuristic Theme Additions
+@import "futuristic";

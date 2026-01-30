@@ -1,5 +1,5 @@
 /* ==========================================================================
-   Variables
+   Variables - Futuristic Dark Theme
    ========================================================================== */
 
 /*
@@ -14,8 +14,8 @@ $indent-var                 : 1.3em;
 
 /* system typefaces */
 $serif                      : Georgia, Times, serif;
-$sans-serif                 : -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
-$monospace                  : Monaco, Consolas, "Lucida Console", monospace;
+$sans-serif                 : 'Inter', 'Poppins', -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
+$monospace                  : 'JetBrains Mono', Monaco, Consolas, "Lucida Console", monospace;
 
 /* sans serif typefaces */
 $sans-serif-narrow          : $sans-serif;
@@ -44,27 +44,47 @@ $type-size-8                : 0.625em;  // ~10px
 
 
 /*
-   Colors
+   Colors - Futuristic Dark Theme
    ========================================================================== */
 
-$gray                       : #7a8288;
-$dark-gray                  : mix(#000, $gray, 40%);
-$darker-gray                : mix(#000, $gray, 60%);
-$light-gray                 : mix(#fff, $gray, 50%);
-$lighter-gray               : mix(#fff, $gray, 90%);
+/* Base dark colors */
+$dark-bg-primary            : #0a0a0f;
+$dark-bg-secondary          : #12121a;
+$dark-bg-tertiary           : #1a1a2e;
+$dark-surface               : rgba(26, 26, 46, 0.8);
 
-$body-color                 : #fff;
-$background-color           : #fff;
-$code-background-color      : #fafafa;
-$code-background-color-dark : $light-gray;
-$text-color                 : $dark-gray;
-$border-color               : $lighter-gray;
+/* Neon accent colors */
+$neon-cyan                  : #00f5ff;
+$neon-purple                : #a855f7;
+$neon-pink                  : #ec4899;
+$neon-green                 : #22c55e;
+$neon-blue                  : #3b82f6;
+$neon-orange                : #f97316;
 
-$primary-color              : #7a8288;
-$success-color              : #62c462;
-$warning-color              : #f89406;
-$danger-color               : #ee5f5b;
-$info-color                 : #52adc8;
+/* Gradients */
+$gradient-primary           : linear-gradient(135deg, $neon-cyan 0%, $neon-purple 100%);
+$gradient-secondary         : linear-gradient(135deg, $neon-purple 0%, $neon-pink 100%);
+$gradient-accent            : linear-gradient(135deg, $neon-blue 0%, $neon-cyan 100%);
+
+$gray                       : #6b7280;
+$dark-gray                  : #374151;
+$darker-gray                : #1f2937;
+$light-gray                 : #9ca3af;
+$lighter-gray               : #e5e7eb;
+
+$body-color                 : $dark-bg-primary;
+$background-color           : $dark-bg-primary;
+$code-background-color      : $dark-bg-tertiary;
+$code-background-color-dark : $dark-bg-secondary;
+$text-color                 : #e2e8f0;
+$muted-text-color           : #94a3b8;
+$border-color               : rgba(255, 255, 255, 0.1);
+
+$primary-color              : $neon-cyan;
+$success-color              : $neon-green;
+$warning-color              : $neon-orange;
+$danger-color               : #ef4444;
+$info-color                 : $neon-blue;
 
 /* brands */
 $behance-color              : #1769FF;
@@ -72,30 +92,40 @@ $dribbble-color             : #ea4c89;
 $facebook-color             : #3b5998;
 $flickr-color               : #ff0084;
 $foursquare-color           : #0072b1;
-$github-color               : #171516;
+$github-color               : #ffffff;
 $google-plus-color          : #dd4b39;
-$instagram-color            : #517fa4;
+$instagram-color            : #e4405f;
 $lastfm-color               : #d51007;
-$linkedin-color             : #007bb6;
+$linkedin-color             : #0077b5;
 $orcid-color                : #a6ce39;
 $pinterest-color            : #cb2027;
 $rss-color                  : #fa9b39;
 $soundcloud-color           : #ff3300;
 $stackoverflow-color        : #fe7a15;
 $tumblr-color               : #32506d;
-$twitter-color              : #55acee;
+$twitter-color              : #1da1f2;
 $vimeo-color                : #1ab7ea;
 $vine-color                 : #00bf8f;
-$youtube-color              : #bb0000;
+$youtube-color              : #ff0000;
 $xing-color                 : #006567;
 
 
 /* links */
-$link-color                 : $info-color;
-$link-color-hover           : mix(#000, $link-color, 25%);
-$link-color-visited         : mix(#fff, $link-color, 25%);
-$masthead-link-color        : $primary-color;
-$masthead-link-color-hover  : mix(#000, $primary-color, 25%);
+$link-color                 : $neon-cyan;
+$link-color-hover           : lighten($neon-cyan, 10%);
+$link-color-visited         : $neon-purple;
+$masthead-link-color        : $text-color;
+$masthead-link-color-hover  : $neon-cyan;
+
+/* Glass morphism */
+$glass-bg                   : rgba(26, 26, 46, 0.6);
+$glass-border               : rgba(255, 255, 255, 0.1);
+$glass-shadow               : 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+
+/* Glow effects */
+$glow-cyan                  : 0 0 20px rgba(0, 245, 255, 0.5);
+$glow-purple                : 0 0 20px rgba(168, 85, 247, 0.5);
+$glow-pink                  : 0 0 20px rgba(236, 72, 153, 0.5);
 
 
 /*

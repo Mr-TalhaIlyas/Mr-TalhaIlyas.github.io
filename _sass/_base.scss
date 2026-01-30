@@ -1,17 +1,19 @@
 /* ==========================================================================
-   BASE ELEMENTS
+   BASE ELEMENTS - Futuristic Theme
    ========================================================================== */
 html {
   /* sticky footer fix */
   position: relative;
   min-height: 100%;
+  scroll-behavior: smooth;
 }
 
 body {
   margin: 0;
   padding: 0;
   padding-bottom: 9em;
-  color: $text-color;
+  color: #e2e8f0;
+  background: #0a0a0f;
   font-family: $global-font-family;
   line-height: 1.5;
 
@@ -26,6 +28,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.2;
   font-family: $header-font-family;
   font-weight: bold;
+  color: #e2e8f0;
 }
 
 h1 {
@@ -59,12 +62,13 @@ small, .small {
 
 p {
   margin-bottom: 1.3em;
+  color: #cbd5e1;
 }
 
 u,
 ins {
   text-decoration: none;
-  border-bottom: 1px solid $text-color;
+  border-bottom: 1px solid #94a3b8;
   a {
     color: inherit;
   }
@@ -87,7 +91,7 @@ abbr[title],
 abbr[data-original-title] {
   text-decoration: none;
   cursor: help;
-  border-bottom: 1px dotted $text-color;
+  border-bottom: 1px dotted #94a3b8;
 }
 
 /* blockquotes */
@@ -97,7 +101,9 @@ blockquote {
   padding-left: 1em;
   padding-right: 1em;
   font-style: italic;
-  border-left: 0.25em solid $primary-color;
+  border-left: 0.25em solid #00f5ff;
+  background: rgba(0, 245, 255, 0.05);
+  color: #94a3b8;
 
   cite {
     font-style: italic;
@@ -112,6 +118,14 @@ blockquote {
 /* links */
 
 a {
+  color: #00f5ff;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  
+  &:hover {
+    color: #a855f7;
+  }
+  
   &:focus {
     @extend %tab-focus;
   }
@@ -130,6 +144,10 @@ tt, code, kbd, samp, pre {
 
 pre {
   overflow-x: auto; /* add scrollbars to wide code blocks*/
+  background: rgba(26, 26, 46, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  padding: 16px;
 }
 
 p > code,
@@ -140,10 +158,10 @@ td > code {
   padding-top: 0.1rem;
   padding-bottom: 0.1rem;
   font-size: $type-size-6;
-  background: $code-background-color;
-  border: 1px solid $lighter-gray;
+  background: rgba(0, 245, 255, 0.1);
+  border: 1px solid rgba(0, 245, 255, 0.3);
   border-radius: $border-radius;
-  box-shadow: $box-shadow;
+  color: #00f5ff;
 
   &:before, &:after {
     letter-spacing: -0.2em;

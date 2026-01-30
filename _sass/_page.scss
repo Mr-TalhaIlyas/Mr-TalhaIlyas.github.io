@@ -1,5 +1,5 @@
 /* ==========================================================================
-   SINGLE PAGE/POST
+   SINGLE PAGE/POST - Futuristic Theme
    ========================================================================== */
 
 #main {
@@ -10,6 +10,7 @@
   padding-right: 1em;
   animation: intro 0.3s both;
   animation-delay: 0.35s;
+  padding-top: 80px; // Account for fixed navbar
 
   @include breakpoint($x-large) {
     max-width: $x-large;
@@ -37,6 +38,7 @@
 .page__title {
   margin-top: 0;
   line-height: 1;
+  color: #e2e8f0;
 
   & + .page__meta {
     margin-top: -0.5em;
@@ -46,13 +48,20 @@
 .page__lead {
   font-family: $global-font-family;
   font-size: $type-size-4;
+  color: #94a3b8;
 }
 
 .page__content {
+  color: #cbd5e1;
 
   h2 {
     padding-bottom: 0.5em;
-    border-bottom: 1px solid $border-color;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    color: #e2e8f0;
+  }
+  
+  h1, h3, h4, h5, h6 {
+    color: #e2e8f0;
   }
 
   p, li, dl {
@@ -73,10 +82,13 @@
   }
 
   a {
-    text-decoration: underline;
+    text-decoration: none;
+    color: #00f5ff;
+    transition: all 0.3s ease;
 
     &:hover {
-      text-decoration: underline;
+      text-decoration: none;
+      color: #a855f7;
 
       img {
         box-shadow: 0 0 10px rgba(#000, 0.25);

@@ -7,7 +7,216 @@ author_profile: true
 
 {% include base_path %}
 
+<div class="page-header" data-aos="fade-up">
+  <h1 class="page-title"><span class="gradient-text">🚀 Research Projects</span></h1>
+  <p class="page-description">Exploring cutting-edge AI solutions for real-world challenges in agriculture, healthcare, and autonomous systems</p>
+</div>
+
+<div class="projects-grid" data-aos="fade-up">
 {% for post in site.projects reversed %}
-  {% include archive-thumbnail.html %}
+  <div class="project-card glass-card">
+    {% if post.header.teaser %}
+    <div class="project-image-wrapper">
+      <img src="{{ post.header.teaser | prepend: base_path }}" alt="{{ post.title }}" class="project-image">
+      <div class="project-overlay">
+        <a href="{{ post.url | prepend: base_path }}" class="project-link-icon">
+          <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+    {% endif %}
+    <div class="project-content">
+      <span class="project-date">{{ post.date | date: "%B %Y" }}</span>
+      <h3 class="project-title">
+        <a href="{{ post.url | prepend: base_path }}">{{ post.title }}</a>
+      </h3>
+      {% if post.excerpt %}
+      <p class="project-description">{{ post.excerpt | markdownify | strip_html | truncatewords: 25 }}</p>
+      {% endif %}
+      <div class="project-footer">
+        <a href="{{ post.url | prepend: base_path }}" class="project-btn">
+          View Details <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+  </div>
 {% endfor %}
+</div>
+
+<style>
+.page-header {
+  text-align: center;
+  margin-bottom: 60px;
+  padding: 40px 0;
+}
+
+.page-title {
+  font-size: 2.5em;
+  font-weight: 800;
+  margin-bottom: 16px;
+}
+
+.page-description {
+  color: #94a3b8;
+  font-size: 1.1em;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 32px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.project-card {
+  position: relative;
+  background: rgba(26, 26, 46, 0.6);
+  border-radius: 20px;
+  overflow: hidden;
+  transition: all 0.4s ease;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  border-color: rgba(0, 245, 255, 0.3);
+  box-shadow: 0 20px 40px rgba(0, 245, 255, 0.15);
+}
+
+.project-image-wrapper {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.project-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.project-card:hover .project-image {
+  transform: scale(1.1);
+}
+
+.project-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(0, 245, 255, 0.8), rgba(168, 85, 247, 0.8));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.project-card:hover .project-overlay {
+  opacity: 1;
+}
+
+.project-link-icon {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  border-radius: 50%;
+  color: #0a0a0f;
+  font-size: 1.4em;
+  transform: scale(0);
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover .project-link-icon {
+  transform: scale(1);
+}
+
+.project-content {
+  padding: 24px;
+}
+
+.project-date {
+  display: inline-block;
+  padding: 4px 12px;
+  background: rgba(168, 85, 247, 0.2);
+  border-radius: 20px;
+  color: #a855f7;
+  font-size: 0.8em;
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+
+.project-title {
+  font-size: 1.25em;
+  font-weight: 600;
+  margin: 0 0 12px;
+  line-height: 1.4;
+}
+
+.project-title a {
+  color: #e2e8f0;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.project-title a:hover {
+  color: #00f5ff;
+}
+
+.project-description {
+  color: #94a3b8;
+  font-size: 0.95em;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.project-footer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.project-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  background: transparent;
+  border: 1px solid rgba(0, 245, 255, 0.3);
+  border-radius: 8px;
+  color: #00f5ff;
+  font-size: 0.9em;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.project-btn:hover {
+  background: rgba(0, 245, 255, 0.1);
+  box-shadow: 0 0 20px rgba(0, 245, 255, 0.3);
+}
+
+.project-btn i {
+  transition: transform 0.3s;
+}
+
+.project-btn:hover i {
+  transform: translateX(4px);
+}
+
+@media (max-width: 768px) {
+  .page-title {
+    font-size: 1.8em;
+  }
+  
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}
+</style>
 

@@ -1,24 +1,213 @@
 {% include base_path %}
 
-<div class="page__footer-follow">
-  <ul class="social-icons">
-    {% if site.data.ui-text[site.locale].follow_label %}
-      <li><strong>{{ site.data.ui-text[site.locale].follow_label }}</strong></li>
-    {% endif %}
-    {% if site.twitter.username %}
-      <li><a href="https://twitter.com/{{ site.twitter.username }}"><i class="fab fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
-    {% endif %}
-    {% if site.facebook.username %}
-      <li><a href="https://facebook.com/{{ site.facebook.username }}"><i class="fab fa-facebook-square" aria-hidden="true"></i> Facebook</a></li>
-    {% endif %}
-    {% if site.author.github %}
-      <li><a href="http://github.com/{{ site.author.github }}"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a></li>
-    {% endif %}
-    {% if site.author.bitbucket %}
-      <li><a href="http://bitbucket.org/{{ site.author.bitbucket }}"><i class="fab fa-bitbucket" aria-hidden="true"></i> Bitbucket</a></li>
-    {% endif %}
-    <li><a href="{% if site.atom_feed.path %}{{ site.atom_feed.path }}{% else %}{{ base_path }}/feed.xml{% endif %}"><i class="fa fa-fw fa-rss-square" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].feed_label | default: "Feed" }}</a></li>
-  </ul>
+<div class="footer-container">
+  <div class="footer-content">
+    <!-- Brand Section -->
+    <div class="footer-brand">
+      <h3 class="gradient-text">Talha Ilyas</h3>
+      <p>AI/ML Researcher & Deep Learning Engineer</p>
+      <p class="footer-location"><i class="fas fa-map-marker-alt"></i> Jeonbuk, South Korea</p>
+    </div>
+    
+    <!-- Quick Links -->
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="{{ base_path }}/publications/"><i class="fas fa-book"></i> Publications</a></li>
+        <li><a href="{{ base_path }}/projects/"><i class="fas fa-project-diagram"></i> Projects</a></li>
+        <li><a href="{{ base_path }}/software/"><i class="fas fa-code"></i> Software</a></li>
+        <li><a href="{{ base_path }}/cv/"><i class="fas fa-file-alt"></i> CV</a></li>
+      </ul>
+    </div>
+    
+    <!-- Connect Section -->
+    <div class="footer-connect">
+      <h4>Connect</h4>
+      <div class="footer-social">
+        {% if site.author.github %}
+          <a href="https://github.com/{{ site.author.github }}" title="GitHub"><i class="fab fa-github"></i></a>
+        {% endif %}
+        {% if site.author.googlescholar %}
+          <a href="{{ site.author.googlescholar }}" title="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
+        {% endif %}
+        {% if site.author.email %}
+          <a href="mailto:{{ site.author.email }}" title="Email"><i class="fas fa-envelope"></i></a>
+        {% endif %}
+        {% if site.author.youtube %}
+          <a href="https://www.youtube.com/channel/{{ site.author.youtube }}" title="YouTube"><i class="fab fa-youtube"></i></a>
+        {% endif %}
+        {% if site.author.orcid %}
+          <a href="{{ site.author.orcid }}" title="ORCID"><i class="fab fa-orcid"></i></a>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+  
+  <div class="footer-bottom">
+    <div class="footer-copyright">
+      &copy; {{ site.time | date: '%Y' }} {{ site.name | default: site.title }}. Built with 
+      <span class="heart">❤️</span> using 
+      <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a>
+    </div>
+    <div class="footer-visitor">
+      <img src="https://profile-counter.glitch.me/Mr-TalhaIlyas.github.io/count.svg" alt="Visitor Count" class="visitor-counter">
+    </div>
+  </div>
 </div>
 
-<div class="page__footer-copyright">&copy; {{ site.time | date: '%Y' }} {{ site.name | default: site.title }}. {{ site.data.ui-text[site.locale].powered_by | default: "Powered by" }} <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://github.com/academicpages/academicpages.github.io">AcademicPages</a>, a fork of <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+<style>
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 24px 24px;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 48px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-brand h3 {
+  font-size: 1.5em;
+  margin-bottom: 12px;
+}
+
+.footer-brand p {
+  color: #94a3b8;
+  font-size: 0.95em;
+  margin-bottom: 8px;
+}
+
+.footer-location {
+  color: #94a3b8;
+}
+
+.footer-location i {
+  color: #00f5ff;
+  margin-right: 8px;
+}
+
+.footer-links h4,
+.footer-connect h4 {
+  font-size: 1.1em;
+  margin-bottom: 20px;
+  color: #e2e8f0;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin-bottom: 12px;
+}
+
+.footer-links a {
+  color: #94a3b8;
+  text-decoration: none;
+  transition: color 0.3s, transform 0.3s;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.footer-links a:hover {
+  color: #00f5ff;
+  transform: translateX(5px);
+}
+
+.footer-links a i {
+  width: 16px;
+}
+
+.footer-social {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.footer-social a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  color: #e2e8f0;
+  font-size: 1.1em;
+  transition: all 0.3s ease;
+}
+
+.footer-social a:hover {
+  color: #00f5ff;
+  border-color: rgba(0, 245, 255, 0.5);
+  box-shadow: 0 0 20px rgba(0, 245, 255, 0.3);
+  transform: translateY(-3px);
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 24px;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.footer-copyright {
+  color: #64748b;
+  font-size: 0.9em;
+}
+
+.footer-copyright a {
+  color: #00f5ff;
+  text-decoration: none;
+}
+
+.footer-copyright a:hover {
+  text-decoration: underline;
+}
+
+.heart {
+  display: inline-block;
+  animation: heartbeat 1.5s ease infinite;
+}
+
+@keyframes heartbeat {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+}
+
+.visitor-counter {
+  height: 24px;
+  opacity: 0.7;
+  transition: opacity 0.3s;
+}
+
+.visitor-counter:hover {
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .footer-content {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  
+  .footer-social {
+    justify-content: center;
+  }
+  
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+</style>
