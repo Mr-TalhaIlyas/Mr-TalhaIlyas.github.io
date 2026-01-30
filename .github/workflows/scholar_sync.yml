@@ -1,0 +1,70 @@
+name: Scholar-Sync
+
+on:
+  schedule:
+    # Run every Sunday at 00:00 UTC
+    - cron: '0 0 * * 0'
+  workflow_dispatch: # Allow manual trigger
+
+permissions:
+  contents: write
+
+jobs:
+  sync-publications:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          
+      - name: Create data directory
+        run: mkdir -p public/data
+        
+      - name: Run Scholar Sync
+        run: |
+          python scripts/fetch_citations.py
+        continue-on-error: true
+        
+      - name: Check for changes
+        id: git-check
+        run: |
+          git diff --exit-code public/data/publications.json || echo "changed=true" >> $GITHUB_OUTPUT
+          
+      - name: Commit and push changes
+        if: steps.git-check.outputs.changed == 'true'
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add public/data/publications.json
+          git commit -m "📚 Auto-sync: Update publications data [$(date +'%Y-%m-%d')]"
+          git push
+          
+      - name: Summary
+        run: |
+          echo "## Scholar-Sync Summary" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          if [ -f "public/data/publications.json" ]; then
+            echo "✅ Publications data updated successfully" >> $GITHUB_STEP_SUMMARY
+            echo "" >> $GITHUB_STEP_SUMMARY
+            echo "### Stats" >> $GITHUB_STEP_SUMMARY
+            python3 << 'EOF' >> $GITHUB_STEP_SUMMARY
+import json
+with open('public/data/publications.json', 'r') as f:
+    data = json.load(f)
+stats = data.get('stats', {})
+pubs = data.get('publications', [])
+print(f'- Total Publications: {len(pubs)}')
+print(f'- Total Citations: {stats.get("citations", "N/A")}')
+print(f'- h-index: {stats.get("h_index", "N/A")}')
+print(f'- i10-index: {stats.get("i10_index", "N/A")}')
+EOF
+          else
+            echo "⚠️ No publications data found" >> $GITHUB_STEP_SUMMARY
+          fi

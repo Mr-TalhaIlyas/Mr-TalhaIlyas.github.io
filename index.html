@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/profile/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Primary Meta Tags -->
+    <title>Talha Ilyas | Vision Intelligence Researcher</title>
+    <meta name="title" content="Talha Ilyas | Vision Intelligence Researcher" />
+    <meta name="description" content="Computer Vision and Medical AI Researcher at Monash University. Specializing in deep learning, precision agriculture, and healthcare AI applications." />
+    <meta name="keywords" content="Talha Ilyas, Computer Vision, Deep Learning, Medical AI, Precision Agriculture, Research, Monash University" />
+    <meta name="author" content="Talha Ilyas" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://Mr-TalhaIlyas.github.io/profile/" />
+    <meta property="og:title" content="Talha Ilyas | Vision Intelligence Researcher" />
+    <meta property="og:description" content="Computer Vision and Medical AI Researcher at Monash University. Specializing in deep learning, precision agriculture, and healthcare AI applications." />
+    <meta property="og:image" content="https://Mr-TalhaIlyas.github.io/profile/og-image.png" />
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://Mr-TalhaIlyas.github.io/profile/" />
+    <meta property="twitter:title" content="Talha Ilyas | Vision Intelligence Researcher" />
+    <meta property="twitter:description" content="Computer Vision and Medical AI Researcher at Monash University. Specializing in deep learning, precision agriculture, and healthcare AI applications." />
+    <meta property="twitter:image" content="https://Mr-TalhaIlyas.github.io/profile/og-image.png" />
+    
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#0a0f1a" />
+    <meta name="msapplication-TileColor" content="#0a0f1a" />
+    
+    <!-- Fonts Preload -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/profile/apple-touch-icon.png" />
+    
+    <style>
+      /* Critical CSS for fast initial render */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      
+      html {
+        background: #0a0f1a;
+      }
+      
+      body {
+        font-family: system-ui, -apple-system, sans-serif;
+        background: linear-gradient(135deg, #0a0f1a 0%, #0d1424 50%, #111a2e 100%);
+        color: #e0e7ef;
+        min-height: 100vh;
+      }
+      
+      #root {
+        min-height: 100vh;
+      }
+      
+      /* Initial loading state */
+      .initial-loader {
+        position: fixed;
+        inset: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #0a0f1a;
+        z-index: 9999;
+      }
+      
+      .loader-content {
+        text-align: center;
+      }
+      
+      .loader-logo {
+        width: 80px;
+        height: 80px;
+        margin: 0 auto 20px;
+        background: linear-gradient(135deg, #00ff9f 0%, #00f0ff 50%, #b14aed 100%);
+        border-radius: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Segoe UI', sans-serif;
+        font-weight: bold;
+        font-size: 28px;
+        color: #0a0f1a;
+        animation: pulse 2s infinite;
+      }
+      
+      @keyframes pulse {
+        0%, 100% { transform: scale(1); opacity: 1; }
+        50% { transform: scale(1.05); opacity: 0.8; }
+      }
+      
+      .loader-bar {
+        width: 200px;
+        height: 3px;
+        background: rgba(0, 255, 159, 0.2);
+        border-radius: 2px;
+        overflow: hidden;
+        margin: 0 auto;
+      }
+      
+      .loader-bar-fill {
+        height: 100%;
+        background: linear-gradient(90deg, #00ff9f, #00f0ff, #b14aed);
+        animation: loading 1.5s ease-in-out infinite;
+      }
+      
+      @keyframes loading {
+        0% { transform: translateX(-100%); }
+        100% { transform: translateX(100%); }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root">
+      <!-- Initial loader shown before React hydrates -->
+      <div class="initial-loader" id="initial-loader">
+        <div class="loader-content">
+          <div class="loader-logo">TI</div>
+          <div class="loader-bar">
+            <div class="loader-bar-fill"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <script>
+      // Hide initial loader once React app mounts
+      window.addEventListener('DOMContentLoaded', function() {
+        setTimeout(function() {
+          var loader = document.getElementById('initial-loader');
+          if (loader) {
+            loader.style.opacity = '0';
+            loader.style.transition = 'opacity 0.3s';
+            setTimeout(function() {
+              loader.style.display = 'none';
+            }, 300);
+          }
+        }, 100);
+      });
+    </script>
+    
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

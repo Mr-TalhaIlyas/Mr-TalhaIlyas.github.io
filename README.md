@@ -1,61 +1,189 @@
-# My Instructions
-* Register a GitHub account if you don't have one and confirm your e-mail (required!)
-* Fork [this repository](https://github.com/academicpages/academicpages.github.io) by clicking the "fork" button in the top right. 
-* Go to the repository's settings (rightmost item in the tabs that start with "Code", should be below "Unwatch"). Rename the repository "[your GitHub username].github.io", which will also be your website's URL.
-----------------------------------------------------------------------------------------
-1. `_data/navigation.yml` go here to change add and delete tabs/pages of your webpage.
-2. Create your own favicon in various resolutions, e.g. 16x16 and save it as `images/favicon-16x16.png` or whatever resolution. The default for web browsers is `images/favicon.ico`. You also need to remove all annoying `?v=M44lzPylqQ` strings in `_includes/head/custom.html` as well.
-3. Info about which pages to edit is in `_pages/markdown.md`
-4. Change content of main landing page in `_pages/about.md`.
-5. Change sidebar content in`_config.yml`
-6. Change how sidebar shows up in `_includes/author-profile.html`
-7. To run the site locally, run `bundle exec jekyll serve`
-8. To change formats of things, try to find the respective `.scss` file in the `_sass` folder.
-9. Add page via `data` then add in `navigation.yaml`.
+# Talha Ilyas - Vision Intelligence Portfolio
 
+<div align="center">
 
+![Portfolio Preview](https://img.shields.io/badge/React-18.2-61DAFB?style=for-the-badge&logo=react&logoColor=white)
+![Three.js](https://img.shields.io/badge/Three.js-r160-000000?style=for-the-badge&logo=three.js&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind-3.4-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-5.0-646CFF?style=for-the-badge&logo=vite&logoColor=white)
 
+**A futuristic, interactive research portfolio showcasing Computer Vision and Medical AI research.**
 
+[Live Demo](https://Mr-TalhaIlyas.github.io/profile) · [Google Scholar](https://scholar.google.com/citations?user=HYNOyyAAAAAJ) · [GitHub](https://github.com/Mr-TalhaIlyas)
 
+</div>
 
+---
 
+## ✨ Features
 
+- **🎨 Cyber-Agritech Aesthetic** - Unique design blending organic data with high-tech interfaces
+- **🌐 Interactive 3D Background** - React Three Fiber powered WebGL scene with particle systems
+- **📊 Animated Data Visualization** - Real-time counters, progress gauges, and dynamic metrics
+- **📚 Scholar-Sync Automation** - Auto-updated publications from Google Scholar via GitHub Actions
+- **⚡ Performance Optimized** - Code splitting, lazy loading, and responsive 3D rendering
+- **📱 Fully Responsive** - Adaptive design with mobile-first approach
 
+## 🚀 Quick Start
 
+### Prerequisites
 
+- Node.js 18+ 
+- npm or yarn
 
+### Installation
 
-*******************************************************
-------------------------------------------------------
+```bash
+# Clone the repository
+git clone https://github.com/Mr-TalhaIlyas/profile.git
+cd profile
 
-A Github Pages template for academic websites. This was forked (then detached) by [Stuart Geiger](https://github.com/staeiou) from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/), which is © 2016 Michael Rose and released under the MIT License. See LICENSE.md.
+# Install dependencies
+npm install
 
-I think I've got things running smoothly and fixed some major bugs, but feel free to file issues or make pull requests if you want to improve the generic template / theme.
+# Start development server
+npm run dev
+```
 
-### Note: if you are using this repo and now get a notification about a security vulnerability, delete the Gemfile.lock file. 
+The site will be available at `http://localhost:5173`
 
-# Instructions
+### Build for Production
 
-1. Register a GitHub account if you don't have one and confirm your e-mail (required!)
-1. Fork [this repository](https://github.com/academicpages/academicpages.github.io) by clicking the "fork" button in the top right. 
-1. Go to the repository's settings (rightmost item in the tabs that start with "Code", should be below "Unwatch"). Rename the repository "[your GitHub username].github.io", which will also be your website's URL.
-1. Set site-wide configuration and create content & metadata (see below -- also see [this set of diffs](http://archive.is/3TPas) showing what files were changed to set up [an example site](https://getorg-testacct.github.io) for a user with the username "getorg-testacct")
-1. Upload any files (like PDFs, .zip files, etc.) to the files/ directory. They will appear at https://[your GitHub username].github.io/files/example.pdf.  
-1. Check status by going to the repository settings, in the "GitHub pages" section
-1. (Optional) Use the Jupyter notebooks or python scripts in the `markdown_generator` folder to generate markdown files for publications and talks from a TSV file.
+```bash
+npm run build
+npm run preview  # Preview production build locally
+```
 
-See more info at https://academicpages.github.io/
+## 📁 Project Structure
 
-## To run locally (not on GitHub Pages, to serve on your own computer)
+```
+profile/
+├── .github/
+│   └── workflows/
+│       ├── deploy.yml          # GitHub Pages deployment
+│       └── scholar_sync.yml    # Weekly publication sync
+├── public/
+│   ├── data/
+│   │   └── publications.json   # Auto-synced publication data
+│   └── favicon.svg
+├── scripts/
+│   └── fetch_citations.py      # Google Scholar scraper
+├── src/
+│   ├── components/
+│   │   ├── Background3D.jsx    # R3F particle scene
+│   │   ├── Navigation.jsx
+│   │   ├── Footer.jsx
+│   │   ├── LoadingScreen.jsx
+│   │   └── UIComponents.jsx    # Reusable UI elements
+│   ├── pages/
+│   │   ├── Hero.jsx            # Landing page with 3D scene
+│   │   ├── About.jsx           # Profile & timeline
+│   │   ├── Projects.jsx        # Research projects showcase
+│   │   ├── Publications.jsx    # Scholar-synced publications
+│   │   ├── Software.jsx        # Open-source toolkits
+│   │   └── Contact.jsx
+│   ├── App.jsx
+│   ├── main.jsx
+│   └── index.css               # Tailwind + custom styles
+├── index.html
+├── package.json
+├── vite.config.js
+├── tailwind.config.js
+└── README.md
+```
 
-1. Clone the repository and made updates as detailed above
-1. Make sure you have ruby-dev, bundler, and nodejs installed: `sudo apt install ruby-dev ruby-bundler nodejs`
-1. Run `bundle clean` to clean up the directory (no need to run `--force`)
-1. Run `bundle install` to install ruby dependencies. If you get errors, delete Gemfile.lock and try again.
-1. Run `bundle exec jekyll liveserve` to generate the HTML and serve it from `localhost:4000` the local server will automatically rebuild and refresh the pages on change.
+## 🔧 Configuration
 
-# Changelog -- bugfixes and enhancements
+### Tailwind Theme
 
-There is one logistical issue with a ready-to-fork template theme like academic pages that makes it a little tricky to get bug fixes and updates to the core theme. If you fork this repository, customize it, then pull again, you'll probably get merge conflicts. If you want to save your various .yml configuration files and markdown files, you can delete the repository and fork it again. Or you can manually patch. 
+The custom Cyber-Agritech color palette is defined in `tailwind.config.js`:
 
-To support this, all changes to the underlying code appear as a closed issue with the tag 'code change' -- get the list [here](https://github.com/academicpages/academicpages.github.io/issues?q=is%3Aclosed%20is%3Aissue%20label%3A%22code%20change%22%20). Each issue thread includes a comment linking to the single commit or a diff across multiple commits, so those with forked repositories can easily identify what they need to patch.
+```javascript
+colors: {
+  'holo': {
+    green: '#00ff9f',
+    cyan: '#00f0ff',
+    purple: '#b14aed',
+  },
+  'cyber': {
+    900: '#0a0f1a',
+    800: '#0d1424',
+  }
+}
+```
+
+### Scholar-Sync
+
+The GitHub Action runs weekly to update publication data:
+
+1. **Manual trigger**: Go to Actions → Scholar-Sync → Run workflow
+2. **Automatic**: Runs every Sunday at 00:00 UTC
+3. **Configuration**: Edit `SCHOLAR_ID` in `scripts/fetch_citations.py`
+
+## 🚢 Deployment to GitHub Pages
+
+### Method 1: GitHub Actions (Recommended)
+
+1. Go to your repository Settings → Pages
+2. Under "Build and deployment", select **GitHub Actions**
+3. Push to `main` branch - deployment happens automatically
+
+### Method 2: Manual Deploy
+
+```bash
+# Build and deploy
+npm run build
+npm run deploy
+```
+
+### Important Notes
+
+- The site uses `HashRouter` for GitHub Pages compatibility
+- Base path is configured in `vite.config.js` as `/profile/`
+- Update the `homepage` field in `package.json` if using a different repo name
+
+## 🛠️ Technologies
+
+| Category | Technologies |
+|----------|-------------|
+| **Framework** | React 18, Vite 5 |
+| **3D Graphics** | Three.js, React Three Fiber, Drei |
+| **Animation** | Framer Motion |
+| **Styling** | Tailwind CSS |
+| **Routing** | React Router v6 (HashRouter) |
+| **Icons** | React Icons |
+| **Automation** | Python, GitHub Actions |
+
+## 📊 Featured Research
+
+### CWD30 Dataset
+- **219,770+** images
+- **30** plant species (20 weeds, 10 crops)
+- **88.54%** mIOU with SegNeXt
+
+### DIANA System
+- Paprika disease phenotyping
+- **91.7%** mAP detection accuracy
+- Multi-task learning approach
+
+### Software Toolkits
+- **EMPatches** - Image patch extraction/merging
+- **SeizureKit** - Medical EEG analysis
+
+## 📜 License
+
+MIT License - see [LICENSE](LICENSE) for details.
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/Mr-TalhaIlyas/profile/issues).
+
+---
+
+<div align="center">
+
+**Built with ❤️ by [Talha Ilyas](https://github.com/Mr-TalhaIlyas)**
+
+*AIM for Health Lab, Monash University*
+
+</div>
