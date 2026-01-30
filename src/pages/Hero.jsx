@@ -4,7 +4,8 @@ import { motion, useScroll, useTransform } from 'framer-motion'
 import { Canvas, useFrame } from '@react-three/fiber'
 import { Points, PointMaterial, Text, Float } from '@react-three/drei'
 import * as THREE from 'three'
-import { FiArrowRight, FiGithub, FiBookOpen, FiCode, FiCpu } from 'react-icons/fi'
+import { FiArrowRight, FiGithub, FiBookOpen, FiCode, FiCpu, FiPackage, FiBox } from 'react-icons/fi'
+import { SiDocker, SiPypi } from 'react-icons/si'
 import { AnimatedCounter } from '../components/UIComponents'
 
 // Interactive 3D Scene Component
@@ -78,17 +79,23 @@ function HeroScene() {
 
 // Stats data
 const stats = [
-  { label: 'Publications', value: 30, suffix: '+', icon: FiBookOpen },
-  { label: 'Citations', value: 1500, suffix: '+', icon: FiCpu },
+  { label: 'Publications', value: 15, suffix: '+', icon: FiBookOpen },
+  { label: 'Citations', value: 456, suffix: '+', icon: FiCpu },
   { label: 'Open Source Projects', value: 15, suffix: '+', icon: FiCode },
-  { label: 'h-index', value: 20, suffix: '', icon: FiGithub },
+  { label: 'h-index', value: 12, suffix: '', icon: FiGithub },
+]
+
+// Software stats
+const softwareStats = [
+  { label: 'PyPI Packages', value: 5, suffix: '', icon: SiPypi, color: 'holo-green' },
+  { label: 'Docker Images', value: 4, suffix: '', icon: SiDocker, color: 'holo-cyan' },
 ]
 
 // Quick links
 const quickLinks = [
   { label: 'View Projects', path: '/projects', color: 'from-holo-green to-holo-cyan' },
   { label: 'Publications', path: '/publications', color: 'from-holo-cyan to-holo-purple' },
-  { label: 'Software', path: '/software', color: 'from-holo-purple to-holo-pink' },
+  { label: 'Software & Tools', path: '/software', color: 'from-holo-purple to-holo-pink' },
 ]
 
 export default function Hero() {
@@ -232,7 +239,7 @@ export default function Hero() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
-            className="grid grid-cols-2 md:grid-cols-4 gap-6"
+            className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-8"
           >
             {stats.map((stat, index) => (
               <motion.div
@@ -252,6 +259,65 @@ export default function Hero() {
                 <div className="text-sm font-mono text-gray-500">{stat.label}</div>
               </motion.div>
             ))}
+          </motion.div>
+
+          {/* Software Stats Row */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.4 }}
+            className="flex flex-wrap justify-center gap-4"
+          >
+            {softwareStats.map((stat, index) => (
+              <Link
+                key={stat.label}
+                to="/software"
+                className={`flex items-center space-x-3 px-6 py-3 rounded-xl border border-${stat.color}/30 bg-cyber-800/30 hover:border-${stat.color}/60 transition-all group`}
+              >
+                <stat.icon className={`w-5 h-5 text-${stat.color}`} />
+                <span className="text-2xl font-display font-bold text-gradient">
+                  <AnimatedCounter value={stat.value} suffix={stat.suffix} />
+                </span>
+                <span className="text-sm font-mono text-gray-400 group-hover:text-gray-300">{stat.label}</span>
+              </Link>
+            ))}
+          </motion.div>
+
+          {/* Industrial Projects Highlight */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.5 }}
+            className="mt-8 p-6 rounded-2xl border border-synth-yellow/30 bg-cyber-800/30 backdrop-blur-sm"
+          >
+            <div className="flex flex-col md:flex-row items-center justify-between gap-4">
+              <div className="flex items-center space-x-4">
+                <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-synth-yellow to-holo-green flex items-center justify-center">
+                  <FiCpu className="w-6 h-6 text-cyber-900" />
+                </div>
+                <div>
+                  <h4 className="font-display font-semibold text-lg text-synth-yellow">Industrial Projects</h4>
+                  <p className="text-sm text-gray-400">Real-world AI deployments in agriculture & healthcare</p>
+                </div>
+              </div>
+              <div className="flex items-center space-x-4">
+                <span className="px-3 py-1 text-xs font-mono rounded-full bg-holo-green/20 text-holo-green border border-holo-green/30">
+                  2 Completed
+                </span>
+                <span className="px-3 py-1 text-xs font-mono rounded-full bg-synth-orange/20 text-synth-orange border border-synth-orange/30">
+                  1 Ongoing
+                </span>
+                <Link
+                  to="/projects"
+                  className="flex items-center space-x-2 text-sm text-holo-cyan hover:text-holo-green transition-colors"
+                >
+                  <span>View Projects</span>
+                  <FiArrowRight className="w-4 h-4" />
+                </Link>
+              </div>
+            </div>
           </motion.div>
         </div>
       </section>

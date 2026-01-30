@@ -1,7 +1,63 @@
 import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { FiDatabase, FiTarget, FiLayers, FiPlay, FiExternalLink, FiGithub } from 'react-icons/fi'
+import { FiDatabase, FiTarget, FiLayers, FiPlay, FiExternalLink, FiGithub, FiYoutube, FiTool } from 'react-icons/fi'
 import { SectionHeader, AnimatedCounter, ProgressGauge } from '../components/UIComponents'
+
+// Industrial Projects
+const industrialProjects = [
+  {
+    id: 'weeding-robot',
+    title: 'Autonomous Weeding Robot',
+    subtitle: 'Pin Precision Weeding Machine',
+    type: 'Industrial Robotics',
+    category: 'industrial',
+    status: 'Completed',
+    description: 'A deep learning-based pin precision weeding machine with densely placed needle nozzles. Featured on KBS News Korea for its innovative approach to eco-friendly weed control.',
+    features: ['Autonomous Navigation', 'Real-time Detection', 'Precision Spraying', 'Deep Learning'],
+    technologies: ['Computer Vision', 'Robotics', 'Edge AI', 'Precision Agriculture'],
+    links: {
+      paper: 'https://www.sciencedirect.com/science/article/abs/pii/S0168169925310968',
+      video: 'https://www.youtube.com/watch?v=5aMDwCvI9K4',
+    },
+    gradient: 'from-synth-yellow to-holo-green',
+    icon: FiTool,
+    highlight: 'Featured on KBS News Korea',
+  },
+  {
+    id: 'sleep-apnea',
+    title: 'Improving Obstructive Sleep Apnea Surgery',
+    subtitle: 'Medical Image Processing Solutions',
+    type: 'Medical Imaging',
+    category: 'industrial',
+    status: 'Completed',
+    description: 'Development of real-time image processing solutions for improving obstructive sleep apnea surgery outcomes. Collaboration with Monash University for clinical medical applications.',
+    features: ['Real-time Processing', 'Surgical Planning', 'Image Analysis', 'Clinical Integration'],
+    technologies: ['Computer Vision', 'Deep Learning', 'Medical Imaging', 'Edge Computing'],
+    links: {
+      project: 'https://research.monash.edu/en/projects/development-of-real-time-image-processing-solutions-for-an-implan/',
+    },
+    gradient: 'from-holo-cyan to-synth-orange',
+    icon: FiTarget,
+    highlight: 'Monash University Industry Partnership',
+  },
+  {
+    id: 'dental-ai',
+    title: 'Multimodal Dental AI Platform',
+    subtitle: 'End-to-End Imaging to Treatment',
+    type: 'Healthcare AI',
+    category: 'industrial',
+    status: 'Ongoing',
+    description: 'End-to-end multimodal dental AI platform integrating imaging analysis with treatment planning. Partnership with CuraeHealth for comprehensive dental care solutions.',
+    features: ['Multimodal Imaging', 'Treatment Planning', 'AI Diagnostics', 'Clinical Workflow'],
+    technologies: ['Computer Vision', 'Deep Learning', 'Medical AI', 'Cloud Platform'],
+    links: {
+      company: 'https://curaehealth.com.au/',
+    },
+    gradient: 'from-holo-purple to-holo-pink',
+    icon: FiTarget,
+    highlight: 'CuraeHealth Partnership',
+  },
+]
 
 const projects = [
   {
@@ -95,6 +151,7 @@ const categories = [
   { id: 'all', label: 'All Projects' },
   { id: 'agriculture', label: 'Agriculture AI' },
   { id: 'medical', label: 'Medical AI' },
+  { id: 'industrial', label: 'Industrial' },
 ]
 
 export default function Projects() {
@@ -103,7 +160,13 @@ export default function Projects() {
 
   const filteredProjects = activeCategory === 'all'
     ? projects
+    : activeCategory === 'industrial'
+    ? []
     : projects.filter((p) => p.category === activeCategory)
+
+  const filteredIndustrialProjects = activeCategory === 'all' || activeCategory === 'industrial'
+    ? industrialProjects
+    : []
 
   return (
     <motion.div
@@ -137,6 +200,153 @@ export default function Projects() {
             ))}
           </div>
         </div>
+
+        {/* Industrial Projects Section */}
+        {filteredIndustrialProjects.length > 0 && (
+          <motion.section
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            className="mb-16"
+          >
+            <h3 className="font-display font-bold text-xl text-gradient mb-6 flex items-center space-x-2">
+              <FiTool className="w-5 h-5 text-synth-yellow" />
+              <span>Industrial Projects</span>
+            </h3>
+            <div className="grid md:grid-cols-2 gap-8">
+              {filteredIndustrialProjects.map((project, index) => (
+                <motion.div
+                  key={project.id}
+                  initial={{ opacity: 0, y: 30 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5, delay: index * 0.1 }}
+                  className="group relative"
+                >
+                  <div className="relative p-6 rounded-2xl border border-cyber-600 bg-cyber-800/30 backdrop-blur-sm overflow-hidden hover:border-transparent transition-all duration-300">
+                    {/* Gradient Border Effect */}
+                    <div className={`absolute inset-0 rounded-2xl bg-gradient-to-r ${project.gradient} opacity-0 group-hover:opacity-100 transition-opacity duration-300`} style={{ padding: '1px' }}>
+                      <div className="w-full h-full rounded-2xl bg-cyber-800" />
+                    </div>
+
+                    {/* Content */}
+                    <div className="relative z-10">
+                      {/* Header */}
+                      <div className="flex items-start justify-between mb-4">
+                        <div className="flex items-center space-x-3">
+                          <div className={`w-12 h-12 rounded-xl bg-gradient-to-br ${project.gradient} flex items-center justify-center`}>
+                            <project.icon className="w-6 h-6 text-cyber-900" />
+                          </div>
+                          <div>
+                            <h3 className="font-display font-bold text-xl text-gradient">
+                              {project.title}
+                            </h3>
+                            <p className="text-sm text-gray-500 font-mono">{project.type}</p>
+                          </div>
+                        </div>
+
+                        {/* Status Badge */}
+                        <span className={`px-3 py-1 text-xs font-mono rounded-full ${
+                          project.status === 'Completed' 
+                            ? 'bg-holo-green/20 text-holo-green border border-holo-green/30' 
+                            : 'bg-synth-orange/20 text-synth-orange border border-synth-orange/30'
+                        }`}>
+                          {project.status}
+                        </span>
+                      </div>
+
+                      {/* Highlight */}
+                      {project.highlight && (
+                        <div className="mb-3 px-3 py-2 rounded-lg bg-synth-yellow/10 border border-synth-yellow/30">
+                          <span className="text-sm text-synth-yellow font-mono">★ {project.highlight}</span>
+                        </div>
+                      )}
+
+                      {/* Subtitle */}
+                      <h4 className="text-gray-300 font-medium mb-3">{project.subtitle}</h4>
+
+                      {/* Description */}
+                      <p className="text-gray-400 text-sm mb-4">
+                        {project.description}
+                      </p>
+
+                      {/* Technologies */}
+                      <div className="flex flex-wrap gap-2 mb-4">
+                        {project.technologies.map((tech) => (
+                          <span
+                            key={tech}
+                            className="px-2 py-1 text-xs font-mono rounded border border-cyber-600 text-gray-400"
+                          >
+                            {tech}
+                          </span>
+                        ))}
+                      </div>
+
+                      {/* Actions */}
+                      <div className="flex items-center space-x-4 pt-4 border-t border-cyber-700">
+                        {project.links.video && (
+                          <a
+                            href={project.links.video}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="flex items-center space-x-2 text-sm text-synth-red hover:text-synth-red/80 transition-colors"
+                          >
+                            <FiYoutube className="w-4 h-4" />
+                            <span>Watch Video</span>
+                          </a>
+                        )}
+                        {project.links.paper && (
+                          <a
+                            href={project.links.paper}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="flex items-center space-x-2 text-sm text-gray-400 hover:text-holo-cyan transition-colors"
+                          >
+                            <FiExternalLink className="w-4 h-4" />
+                            <span>Publication</span>
+                          </a>
+                        )}
+                        {project.links.project && (
+                          <a
+                            href={project.links.project}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="flex items-center space-x-2 text-sm text-gray-400 hover:text-holo-green transition-colors"
+                          >
+                            <FiExternalLink className="w-4 h-4" />
+                            <span>Project Page</span>
+                          </a>
+                        )}
+                        {project.links.company && (
+                          <a
+                            href={project.links.company}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="flex items-center space-x-2 text-sm text-gray-400 hover:text-holo-purple transition-colors"
+                          >
+                            <FiExternalLink className="w-4 h-4" />
+                            <span>Partner</span>
+                          </a>
+                        )}
+                      </div>
+                    </div>
+                  </div>
+                </motion.div>
+              ))}
+            </div>
+          </motion.section>
+        )}
+
+        {/* Research Projects Section */}
+        {filteredProjects.length > 0 && (
+          <motion.section
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+          >
+            {filteredIndustrialProjects.length > 0 && (
+              <h3 className="font-display font-bold text-xl text-gradient mb-6 flex items-center space-x-2">
+                <FiDatabase className="w-5 h-5 text-holo-cyan" />
+                <span>Research Projects</span>
+              </h3>
+            )}
 
         {/* Projects Grid */}
         <div className="grid md:grid-cols-2 gap-8">
@@ -239,6 +449,8 @@ export default function Projects() {
             ))}
           </AnimatePresence>
         </div>
+          </motion.section>
+        )}
 
         {/* Project Modal */}
         <AnimatePresence>

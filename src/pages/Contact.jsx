@@ -1,7 +1,8 @@
 import { useState } from 'react'
 import { motion } from 'framer-motion'
-import { FiMail, FiGithub, FiLinkedin, FiMapPin, FiSend, FiExternalLink } from 'react-icons/fi'
-import { SiGooglescholar, SiOrcid } from 'react-icons/si'
+import { FiMail, FiGithub, FiLinkedin, FiMapPin, FiExternalLink } from 'react-icons/fi'
+import { SiGooglescholar, SiOrcid, SiPypi, SiDocker } from 'react-icons/si'
+import { FiYoutube } from 'react-icons/fi'
 import { SectionHeader, TerminalWindow } from '../components/UIComponents'
 
 const contactInfo = [
@@ -50,39 +51,30 @@ const socialLinks = [
     href: 'https://orcid.org/',
     color: 'holo-purple',
   },
+  {
+    icon: SiPypi,
+    label: 'PyPI',
+    value: 'talhailyas',
+    href: 'https://pypi.org/user/talhailyas/',
+    color: 'holo-green',
+  },
+  {
+    icon: SiDocker,
+    label: 'Docker Hub',
+    value: 'talhailyas',
+    href: 'https://hub.docker.com/repositories/talhailyas',
+    color: 'holo-cyan',
+  },
+  {
+    icon: FiYoutube,
+    label: 'YouTube',
+    value: '@yondarz',
+    href: 'https://www.youtube.com/@yondarz',
+    color: 'synth-red',
+  },
 ]
 
 export default function Contact() {
-  const [formState, setFormState] = useState({
-    name: '',
-    email: '',
-    subject: '',
-    message: '',
-  })
-  const [isSubmitting, setIsSubmitting] = useState(false)
-  const [submitted, setSubmitted] = useState(false)
-
-  const handleSubmit = async (e) => {
-    e.preventDefault()
-    setIsSubmitting(true)
-
-    // Simulate form submission
-    await new Promise((resolve) => setTimeout(resolve, 1500))
-
-    setIsSubmitting(false)
-    setSubmitted(true)
-    setFormState({ name: '', email: '', subject: '', message: '' })
-
-    setTimeout(() => setSubmitted(false), 5000)
-  }
-
-  const handleChange = (e) => {
-    setFormState((prev) => ({
-      ...prev,
-      [e.target.name]: e.target.value,
-    }))
-  }
-
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -190,131 +182,63 @@ export default function Contact() {
             </div>
           </motion.div>
 
-          {/* Right: Contact Form */}
+          {/* Right: Affiliations & Resources */}
           <motion.div
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}
+            className="space-y-8"
           >
+            {/* Affiliations */}
             <div className="p-8 rounded-2xl border border-cyber-600 bg-cyber-800/30 backdrop-blur-sm">
               <h3 className="font-display font-semibold text-xl text-gradient mb-6">
-                Send a Message
+                Affiliations
               </h3>
-
-              {submitted ? (
-                <motion.div
-                  initial={{ opacity: 0, scale: 0.9 }}
-                  animate={{ opacity: 1, scale: 1 }}
-                  className="flex flex-col items-center justify-center py-12"
+              <div className="space-y-4">
+                <a
+                  href="https://www.monash.edu/it/aimh-lab"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block p-4 rounded-xl border border-holo-cyan/30 bg-cyber-900/50 hover:border-holo-cyan/60 transition-all group"
                 >
-                  <div className="w-16 h-16 rounded-full bg-holo-green/20 flex items-center justify-center mb-4">
-                    <FiSend className="w-8 h-8 text-holo-green" />
+                  <div className="flex items-center justify-between">
+                    <div>
+                      <p className="text-gray-200 font-medium group-hover:text-holo-cyan transition-colors">AIM for Health Lab</p>
+                      <p className="text-gray-500 text-sm">Monash University, Australia</p>
+                    </div>
+                    <FiExternalLink className="w-4 h-4 text-gray-600 group-hover:text-holo-cyan transition-colors" />
                   </div>
-                  <h4 className="font-display font-semibold text-xl text-holo-green mb-2">
-                    Message Sent!
-                  </h4>
-                  <p className="text-gray-400 text-center">
-                    Thank you for reaching out. I'll get back to you soon.
-                  </p>
-                </motion.div>
-              ) : (
-                <form onSubmit={handleSubmit} className="space-y-6">
-                  {/* Name Input */}
-                  <div>
-                    <label className="block text-sm font-mono text-gray-400 mb-2">
-                      Name
-                    </label>
-                    <input
-                      type="text"
-                      name="name"
-                      value={formState.name}
-                      onChange={handleChange}
-                      required
-                      className="w-full px-4 py-3 rounded-lg border border-cyber-600 bg-cyber-900/50 text-gray-200 placeholder-gray-600 focus:outline-none focus:border-holo-green transition-colors"
-                      placeholder="Your name"
-                    />
+                </a>
+                <a
+                  href="https://www.alfredhealth.org.au/services/st-kilda-road-clinic"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block p-4 rounded-xl border border-holo-green/30 bg-cyber-900/50 hover:border-holo-green/60 transition-all group"
+                >
+                  <div className="flex items-center justify-between">
+                    <div>
+                      <p className="text-gray-200 font-medium group-hover:text-holo-green transition-colors">Alfred Health</p>
+                      <p className="text-gray-500 text-sm">Honorary Researcher • Melbourne, Australia</p>
+                    </div>
+                    <FiExternalLink className="w-4 h-4 text-gray-600 group-hover:text-holo-green transition-colors" />
                   </div>
-
-                  {/* Email Input */}
-                  <div>
-                    <label className="block text-sm font-mono text-gray-400 mb-2">
-                      Email
-                    </label>
-                    <input
-                      type="email"
-                      name="email"
-                      value={formState.email}
-                      onChange={handleChange}
-                      required
-                      className="w-full px-4 py-3 rounded-lg border border-cyber-600 bg-cyber-900/50 text-gray-200 placeholder-gray-600 focus:outline-none focus:border-holo-green transition-colors"
-                      placeholder="your@email.com"
-                    />
+                </a>
+                <a
+                  href="https://robot.jbnu.ac.kr/robot/21492/subview.do"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block p-4 rounded-xl border border-holo-purple/30 bg-cyber-900/50 hover:border-holo-purple/60 transition-all group"
+                >
+                  <div className="flex items-center justify-between">
+                    <div>
+                      <p className="text-gray-200 font-medium group-hover:text-holo-purple transition-colors">Core Research Institute of Intelligent Robots</p>
+                      <p className="text-gray-500 text-sm">Honorary Researcher • JBNU, Korea</p>
+                    </div>
+                    <FiExternalLink className="w-4 h-4 text-gray-600 group-hover:text-holo-purple transition-colors" />
                   </div>
-
-                  {/* Subject Input */}
-                  <div>
-                    <label className="block text-sm font-mono text-gray-400 mb-2">
-                      Subject
-                    </label>
-                    <input
-                      type="text"
-                      name="subject"
-                      value={formState.subject}
-                      onChange={handleChange}
-                      required
-                      className="w-full px-4 py-3 rounded-lg border border-cyber-600 bg-cyber-900/50 text-gray-200 placeholder-gray-600 focus:outline-none focus:border-holo-green transition-colors"
-                      placeholder="What's this about?"
-                    />
-                  </div>
-
-                  {/* Message Input */}
-                  <div>
-                    <label className="block text-sm font-mono text-gray-400 mb-2">
-                      Message
-                    </label>
-                    <textarea
-                      name="message"
-                      value={formState.message}
-                      onChange={handleChange}
-                      required
-                      rows={5}
-                      className="w-full px-4 py-3 rounded-lg border border-cyber-600 bg-cyber-900/50 text-gray-200 placeholder-gray-600 focus:outline-none focus:border-holo-green transition-colors resize-none"
-                      placeholder="Your message..."
-                    />
-                  </div>
-
-                  {/* Submit Button */}
-                  <motion.button
-                    type="submit"
-                    disabled={isSubmitting}
-                    whileHover={{ scale: 1.02 }}
-                    whileTap={{ scale: 0.98 }}
-                    className={`w-full flex items-center justify-center space-x-2 px-6 py-4 rounded-lg font-semibold transition-all ${
-                      isSubmitting
-                        ? 'bg-cyber-700 text-gray-500 cursor-not-allowed'
-                        : 'bg-gradient-to-r from-holo-green to-holo-cyan text-cyber-900 hover:shadow-holo-lg'
-                    }`}
-                  >
-                    {isSubmitting ? (
-                      <>
-                        <div className="w-5 h-5 border-2 border-gray-500 border-t-transparent rounded-full animate-spin" />
-                        <span>Transmitting...</span>
-                      </>
-                    ) : (
-                      <>
-                        <FiSend className="w-5 h-5" />
-                        <span>Send Message</span>
-                      </>
-                    )}
-                  </motion.button>
-
-                  <p className="text-xs text-gray-500 text-center">
-                    This form currently simulates submission. For actual inquiries, 
-                    please use the email address provided.
-                  </p>
-                </form>
-              )}
+                </a>
+              </div>
             </div>
           </motion.div>
         </div>

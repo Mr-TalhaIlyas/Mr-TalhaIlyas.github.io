@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { FiMapPin, FiCalendar, FiAward, FiBookOpen, FiCode, FiCpu } from 'react-icons/fi'
+import { FiMapPin, FiCalendar, FiAward, FiBookOpen, FiCode, FiCpu, FiExternalLink } from 'react-icons/fi'
 import { SectionHeader, TerminalWindow, TypewriterText } from '../components/UIComponents'
 
 const timeline = [
@@ -11,6 +11,27 @@ const timeline = [
     description: 'Developing advanced AI systems for medical imaging, focusing on seizure detection, medical phenotyping, and clinical decision support systems.',
     focus: ['Medical AI', 'Vision Intelligence', 'Clinical Applications'],
     color: 'holo-cyan',
+    link: 'https://www.monash.edu/it/aimh-lab',
+  },
+  {
+    period: '2023 - Present',
+    role: 'Honorary Researcher',
+    institution: 'Alfred Health',
+    location: 'Melbourne, Australia',
+    description: 'Collaborating on medical AI research and clinical applications at St Kilda Road Clinic.',
+    focus: ['Medical Imaging', 'Clinical AI', 'Healthcare'],
+    color: 'holo-green',
+    link: 'https://www.alfredhealth.org.au/services/st-kilda-road-clinic',
+  },
+  {
+    period: '2019 - Present',
+    role: 'Honorary Researcher',
+    institution: 'Core Research Institute of Intelligent Robots',
+    location: 'JBNU, South Korea',
+    description: 'Continuing collaboration on precision agriculture robotics and computer vision systems for autonomous field operations.',
+    focus: ['Robotics', 'Precision Agriculture', 'Autonomous Systems'],
+    color: 'holo-purple',
+    link: 'https://robot.jbnu.ac.kr/robot/21492/subview.do',
   },
   {
     period: '2019 - 2023',
@@ -19,7 +40,7 @@ const timeline = [
     location: 'JBNU University, South Korea',
     description: 'Pioneered computer vision systems for precision agriculture, including crop-weed classification, disease detection, and autonomous field analysis.',
     focus: ['Precision Agriculture', 'Deep Learning', 'Edge AI'],
-    color: 'holo-green',
+    color: 'synth-orange',
   },
 ]
 
@@ -45,10 +66,10 @@ const skills = [
 ]
 
 const achievements = [
-  { metric: '30+', label: 'Publications' },
-  { metric: '1500+', label: 'Citations' },
+  { metric: '15+', label: 'Publications' },
+  { metric: '456+', label: 'Citations' },
   { metric: '15+', label: 'Open Source Projects' },
-  { metric: '88.54%', label: 'Best mIOU (CWD30)' },
+  { metric: '12', label: 'h-index' },
 ]
 
 export default function About() {
@@ -214,9 +235,21 @@ export default function About() {
                       <h4 className="font-display font-semibold text-xl text-gray-100 mb-1">
                         {item.role}
                       </h4>
-                      <p className="text-gray-400 text-sm mb-3">
-                        {item.institution} • {item.location}
-                      </p>
+                      <div className="flex items-center space-x-2 mb-3">
+                        <p className="text-gray-400 text-sm">
+                          {item.institution} • {item.location}
+                        </p>
+                        {item.link && (
+                          <a
+                            href={item.link}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className={`text-${item.color} hover:opacity-80 transition-opacity`}
+                          >
+                            <FiExternalLink className="w-4 h-4" />
+                          </a>
+                        )}
+                      </div>
 
                       <p className="text-gray-300 text-sm mb-4">
                         {item.description}

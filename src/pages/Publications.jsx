@@ -56,18 +56,18 @@ export default function Publications() {
   useEffect(() => {
     const fetchPublications = async () => {
       try {
-        const response = await fetch('/profile/data/publications.json')
+        const response = await fetch('/data/publications.json')
         if (response.ok) {
           const data = await response.json()
           setPublications(data.publications || [])
-          setStats(data.stats || { citations: 0, h_index: 0, i10_index: 0 })
+          setStats(data.stats || { citations: 456, h_index: 12, i10_index: 14 })
         } else {
           throw new Error('Failed to fetch')
         }
       } catch (err) {
         console.warn('Using fallback publication data:', err)
         setPublications(fallbackPublications)
-        setStats({ citations: 1500, h_index: 20, i10_index: 15 })
+        setStats({ citations: 456, h_index: 12, i10_index: 14 })
         setError('Using cached data')
       } finally {
         setLoading(false)
@@ -111,7 +111,7 @@ export default function Publications() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeader
           title="Publications"
-          subtitle="// Scholar-Sync: Auto-updated from Google Scholar"
+          subtitle="// Research publications and citation metrics"
           align="center"
         />
 
