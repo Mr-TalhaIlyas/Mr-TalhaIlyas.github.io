@@ -1,4 +1,4 @@
-import { useRef } from 'react'
+import { useRef, useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { motion, useScroll, useTransform } from 'framer-motion'
 import { Canvas, useFrame } from '@react-three/fiber'
@@ -7,6 +7,43 @@ import * as THREE from 'three'
 import { FiArrowRight, FiGithub, FiBookOpen, FiCode, FiCpu, FiPackage, FiBox } from 'react-icons/fi'
 import { SiDocker, SiPypi } from 'react-icons/si'
 import { AnimatedCounter } from '../components/UIComponents'
+
+// Check if device can handle 3D/WebGL
+function useCanRender3D() {
+  const [canRender, setCanRender] = useState(false)
+
+  useEffect(() => {
+    const checkCapability = () => {
+      // Check screen size (disable on mobile/tablet)
+      const isSmallScreen = window.innerWidth < 1024
+      
+      // Check for reduced motion preference
+      const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches
+      
+      // Check WebGL support
+      let hasWebGL = false
+      try {
+        const canvas = document.createElement('canvas')
+        hasWebGL = !!(window.WebGLRenderingContext && 
+          (canvas.getContext('webgl') || canvas.getContext('experimental-webgl')))
+      } catch (e) {
+        hasWebGL = false
+      }
+
+      // Check if device is likely low-powered (mobile/tablet)
+      const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0
+      const isLowPower = isTouchDevice && window.innerWidth < 1200
+
+      setCanRender(hasWebGL && !isSmallScreen && !prefersReducedMotion && !isLowPower)
+    }
+
+    checkCapability()
+    window.addEventListener('resize', checkCapability)
+    return () => window.removeEventListener('resize', checkCapability)
+  }, [])
+
+  return canRender
+}
 
 // Interactive 3D Scene Component
 function HeroScene() {
@@ -98,8 +135,30 @@ const quickLinks = [
   { label: 'Software & Tools', path: '/software', color: 'from-holo-purple to-holo-pink' },
 ]
 
+// Fallback animated background for mobile/tablet
+function MobileFallbackBackground() {
+  return (
+    <div className="absolute inset-0 z-0 overflow-hidden">
+      {/* Gradient orbs */}
+      <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-holo-green/20 rounded-full blur-3xl animate-pulse" />
+      <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-holo-purple/20 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }} />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-80 h-80 bg-holo-cyan/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '0.5s' }} />
+      
+      {/* Grid lines */}
+      <div className="absolute inset-0" style={{
+        backgroundImage: `
+          linear-gradient(to right, rgba(0, 255, 159, 0.03) 1px, transparent 1px),
+          linear-gradient(to bottom, rgba(0, 255, 159, 0.03) 1px, transparent 1px)
+        `,
+        backgroundSize: '50px 50px'
+      }} />
+    </div>
+  )
+}
+
 export default function Hero() {
   const containerRef = useRef(null)
+  const canRender3D = useCanRender3D()
   const { scrollYProgress } = useScroll({
     target: containerRef,
     offset: ['start start', 'end start'],
@@ -112,16 +171,23 @@ export default function Hero() {
     <div ref={containerRef} className="relative">
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-        {/* 3D Canvas */}
-        <div className="absolute inset-0 z-0">
-          <Canvas
-            camera={{ position: [0, 0, 8], fov: 60 }}
-            dpr={[1, 2]}
-            gl={{ antialias: true, alpha: true }}
-          >
-            <HeroScene />
-          </Canvas>
-        </div>
+        {/* 3D Canvas - only render on capable devices */}
+        {canRender3D ? (
+          <div className="absolute inset-0 z-0">
+            <Canvas
+              camera={{ position: [0, 0, 8], fov: 60 }}
+              dpr={[1, 1.5]}
+              gl={{ antialias: true, alpha: true, powerPreference: 'high-performance' }}
+              onCreated={({ gl }) => {
+                gl.setClearColor(0x000000, 0)
+              }}
+            >
+              <HeroScene />
+            </Canvas>
+          </div>
+        ) : (
+          <MobileFallbackBackground />
+        )}
 
         {/* Content Overlay */}
         <motion.div

@@ -3,35 +3,60 @@ import { motion, useInView } from 'framer-motion'
 
 export function AnimatedCounter({ value, duration = 2, prefix = '', suffix = '' }) {
   const [count, setCount] = useState(0)
+  const [hasAnimated, setHasAnimated] = useState(false)
   const ref = useRef(null)
-  const isInView = useInView(ref, { once: true, margin: '-100px' })
+  // Use a smaller margin and amount for better mobile detection
+  const isInView = useInView(ref, { once: true, margin: '0px', amount: 0.1 })
 
   useEffect(() => {
-    if (!isInView) return
-
-    let startTime
-    const startValue = 0
+    // Also trigger if component is mounted and visible for a short time (fallback for mobile)
+    if (hasAnimated) return
+    
     const endValue = typeof value === 'number' ? value : parseFloat(value) || 0
-
-    const animate = (timestamp) => {
-      if (!startTime) startTime = timestamp
-      const progress = Math.min((timestamp - startTime) / (duration * 1000), 1)
-      
-      // Easing function
-      const easeOutQuart = 1 - Math.pow(1 - progress, 4)
-      const currentValue = startValue + (endValue - startValue) * easeOutQuart
-
-      setCount(currentValue)
-
-      if (progress < 1) {
-        requestAnimationFrame(animate)
+    
+    // Fallback: if not triggered after mount, check if element is in viewport
+    const fallbackTimer = setTimeout(() => {
+      if (!hasAnimated && ref.current) {
+        const rect = ref.current.getBoundingClientRect()
+        const isVisible = rect.top < window.innerHeight && rect.bottom > 0
+        if (isVisible) {
+          runAnimation(endValue)
+        }
       }
+    }, 500)
+
+    if (isInView && !hasAnimated) {
+      runAnimation(endValue)
     }
 
-    requestAnimationFrame(animate)
-  }, [isInView, value, duration])
+    function runAnimation(endValue) {
+      setHasAnimated(true)
+      let startTime
+      const startValue = 0
 
-  const displayValue = Number.isInteger(value) 
+      const animate = (timestamp) => {
+        if (!startTime) startTime = timestamp
+        const progress = Math.min((timestamp - startTime) / (duration * 1000), 1)
+        
+        // Easing function
+        const easeOutQuart = 1 - Math.pow(1 - progress, 4)
+        const currentValue = startValue + (endValue - startValue) * easeOutQuart
+
+        setCount(currentValue)
+
+        if (progress < 1) {
+          requestAnimationFrame(animate)
+        }
+      }
+
+      requestAnimationFrame(animate)
+    }
+
+    return () => clearTimeout(fallbackTimer)
+  }, [isInView, value, duration, hasAnimated])
+
+  const endValue = typeof value === 'number' ? value : parseFloat(value) || 0
+  const displayValue = Number.isInteger(endValue) 
     ? Math.round(count) 
     : count.toFixed(2)
 

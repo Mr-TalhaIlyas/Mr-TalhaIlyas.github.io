@@ -1,4 +1,4 @@
-import { useRef, useMemo } from 'react'
+import React, { useRef, useMemo, useState, useEffect } from 'react'
 import { Canvas, useFrame, useThree } from '@react-three/fiber'
 import { Points, PointMaterial } from '@react-three/drei'
 import * as THREE from 'three'
@@ -243,17 +243,67 @@ function FloatingOrbs() {
   )
 }
 
+// Fallback background for when WebGL fails or is unavailable
+function FallbackBackground() {
+  return (
+    <div className="fixed inset-0 z-0 overflow-hidden bg-cyber-900">
+      {/* Animated gradient orbs */}
+      <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-holo-green/10 rounded-full blur-3xl animate-pulse" />
+      <div className="absolute bottom-1/3 right-1/4 w-80 h-80 bg-holo-purple/15 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }} />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-72 h-72 bg-holo-cyan/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '0.5s' }} />
+      
+      {/* Subtle grid */}
+      <div className="absolute inset-0" style={{
+        backgroundImage: `
+          linear-gradient(to right, rgba(0, 255, 159, 0.02) 1px, transparent 1px),
+          linear-gradient(to bottom, rgba(0, 255, 159, 0.02) 1px, transparent 1px)
+        `,
+        backgroundSize: '60px 60px'
+      }} />
+    </div>
+  )
+}
+
 export default function Background3D() {
+  const [hasError, setHasError] = useState(false)
+  const [isSupported, setIsSupported] = useState(true)
+
+  useEffect(() => {
+    // Check WebGL support on mount
+    try {
+      const canvas = document.createElement('canvas')
+      const gl = canvas.getContext('webgl') || canvas.getContext('experimental-webgl')
+      if (!gl) {
+        setIsSupported(false)
+      }
+    } catch (e) {
+      setIsSupported(false)
+    }
+  }, [])
+
+  // If WebGL not supported or error occurred, show fallback
+  if (!isSupported || hasError) {
+    return <FallbackBackground />
+  }
+
   return (
     <div className="r3f-canvas">
       <Canvas
         camera={{ position: [0, 2, 10], fov: 60 }}
-        dpr={[1, 2]}
+        dpr={[1, 1.5]}
         gl={{ 
           antialias: true, 
           alpha: true,
-          powerPreference: 'high-performance'
+          powerPreference: 'high-performance',
+          failIfMajorPerformanceCaveat: true
         }}
+        onCreated={({ gl }) => {
+          // Additional check after context creation
+          if (!gl) {
+            setHasError(true)
+          }
+        }}
+        onError={() => setHasError(true)}
       >
         <color attach="background" args={['#0a0f1a']} />
         <fog attach="fog" args={['#0a0f1a', 5, 30]} />
@@ -262,8 +312,8 @@ export default function Background3D() {
         <pointLight position={[10, 10, 10]} intensity={0.5} color="#00ff9f" />
         <pointLight position={[-10, -10, -10]} intensity={0.3} color="#b14aed" />
 
-        <ParticleField count={3000} />
-        <NeuralNetwork nodeCount={40} />
+        <ParticleField count={2000} />
+        <NeuralNetwork nodeCount={30} />
         <FloatingOrbs />
       </Canvas>
     </div>

@@ -15,16 +15,22 @@ export default function LoadingScreen() {
   ]
 
   useEffect(() => {
+    // Faster loading on mobile/touch devices
+    const isMobileOrTablet = window.innerWidth < 1024 || 
+      ('ontouchstart' in window || navigator.maxTouchPoints > 0)
+    const intervalTime = isMobileOrTablet ? 100 : 200
+    const progressIncrement = isMobileOrTablet ? 25 : 15
+
     const interval = setInterval(() => {
       setProgress((prev) => {
-        const next = prev + Math.random() * 15
+        const next = prev + Math.random() * progressIncrement
         if (next >= 100) {
           clearInterval(interval)
           return 100
         }
         return next
       })
-    }, 200)
+    }, intervalTime)
 
     return () => clearInterval(interval)
   }, [])

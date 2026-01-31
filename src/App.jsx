@@ -22,20 +22,41 @@ function App() {
   const location = useLocation()
 
   useEffect(() => {
-    // Simulate initial loading
+    // Faster loading on mobile/tablet devices
+    const isMobileOrTablet = window.innerWidth < 1024 || 
+      ('ontouchstart' in window || navigator.maxTouchPoints > 0)
+    const loadingTime = isMobileOrTablet ? 1000 : 2000
+
     const timer = setTimeout(() => {
       setIsLoading(false)
-    }, 2000)
+    }, loadingTime)
 
     return () => clearTimeout(timer)
   }, [])
 
-  // Disable 3D background on mobile for performance
+  // Disable 3D background on mobile/tablet for performance
   useEffect(() => {
     const checkPerformance = () => {
-      const isMobile = window.innerWidth < 768
+      // Disable on screens smaller than 1024px (includes tablets)
+      const isSmallScreen = window.innerWidth < 1024
       const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches
-      setShowBackground(!isMobile && !prefersReducedMotion)
+      
+      // Check if device is touch-based (mobile/tablet indicator)
+      const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0
+      
+      // Check WebGL support
+      let hasWebGL = false
+      try {
+        const canvas = document.createElement('canvas')
+        hasWebGL = !!(window.WebGLRenderingContext && 
+          (canvas.getContext('webgl') || canvas.getContext('experimental-webgl')))
+      } catch (e) {
+        hasWebGL = false
+      }
+
+      // Disable 3D for: small screens, touch devices, no WebGL, or reduced motion preference
+      const shouldDisable = isSmallScreen || (isTouchDevice && window.innerWidth < 1200) || !hasWebGL || prefersReducedMotion
+      setShowBackground(!shouldDisable)
     }
 
     checkPerformance()

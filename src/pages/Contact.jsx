@@ -41,14 +41,14 @@ const socialLinks = [
     icon: FiLinkedin,
     label: 'LinkedIn',
     value: 'Talha Ilyas',
-    href: 'https://linkedin.com/in/talha-ilyas',
+    href: 'https://www.linkedin.com/in/talha-ilyas-bb1a17159/',
     color: 'holo-blue',
   },
   {
     icon: SiOrcid,
     label: 'ORCID',
     value: 'ORCID Profile',
-    href: 'https://orcid.org/',
+    href: 'https://orcid.org/0000-0002-4168-2998',
     color: 'holo-purple',
   },
   {
