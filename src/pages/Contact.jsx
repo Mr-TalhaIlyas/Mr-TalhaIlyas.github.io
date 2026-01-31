@@ -9,8 +9,8 @@ const contactInfo = [
   {
     icon: FiMail,
     label: 'Email',
-    value: 'talha.ilyas@monash.edu',
-    href: 'mailto:talha.ilyas@monash.edu',
+    value: '<first_name>.<last_name>@monash.edu',
+    href: 'mailto:<first_name>.<last_name>@monash.edu',
     color: 'holo-green',
   },
   {
